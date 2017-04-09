@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\exercism.projects\delphi\circular-buffer\CircularBuffer.exe" total="9" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="6.436">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="CircularBuffer.exe" executed="true" result="Success" success="True" time="6.436" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uCircularBufferTests" executed="true" result="Success" success="True" time="6.436" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="TestCircularBuffer" executed="True" result="Success" success="True" time="6.436" >
+                <results>
+                  <test-case name="Write_and_read_back_one_item" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Write_and_read_back_multiple_items" executed="True" result="Success" success="True" time="6.413" asserts="0" />
+                  <test-case name="Clearing_buffer" executed="True" result="Success" success="True" time="0.012" asserts="0" />
+                  <test-case name="Alternate_write_and_read" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Reads_back_oldest_item" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Writing_to_a_full_buffer_throws_an_exception" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                  <test-case name="Overwriting_oldest_item_in_a_full_buffer" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                  <test-case name="Forced_writes_to_non_full_buffer_should_behave_like_writes" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                  <test-case name="Alternate_read_and_write_into_buffer_overflow" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
