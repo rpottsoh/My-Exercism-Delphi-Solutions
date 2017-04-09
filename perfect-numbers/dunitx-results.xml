@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\exercism.projects\delphi\perfect-numbers\PerfectNumbers.exe" total="9" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="0.001">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="PerfectNumbers.exe" executed="true" result="Success" success="True" time="0.001" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uPerfectNumbersTest" executed="true" result="Success" success="True" time="0.001" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="PerfectNumbersTest" executed="True" result="Success" success="True" time="0.001" >
+                <results>
+                  <test-case name="Can_classify_3_as_deficient" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_7_as_deficient" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_13_as_deficient" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_6_as_perfect" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_28_as_perfect" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_496_as_perfect" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_12_as_abundant" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_18_as_abundant" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_classify_20_as_abundant" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
