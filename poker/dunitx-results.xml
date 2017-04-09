@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\exercism.projects\delphi\poker\Poker.exe" total="19" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="0.020">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="Poker.exe" executed="true" result="Success" success="True" time="0.020" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uPokerTest" executed="true" result="Success" success="True" time="0.019" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="PokerTest" executed="True" result="Success" success="True" time="0.019" >
+                <results>
+                  <test-case name="One_hand" executed="True" result="Success" success="True" time="0.015" asserts="0" />
+                  <test-case name="Nothing_vs_one_pair" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_pairs" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="One_pair_vs_double_pair" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Two_double_pairs" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Double_pair_vs_three" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_threes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Three_vs_straight" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_straights" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Straight_vs_flush" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_flushes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Flush_vs_full" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_fulls" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Full_vs_square" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_squares" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Square_vs_straight_flush" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_straight_flushes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Three_hand_with_tie" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Straight_to_5_against_a_pair_of_jacks" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
