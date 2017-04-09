@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\exercism.projects\delphi\bank-account\BankAccount.exe" total="5" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="53.138">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="BankAccount.exe" executed="true" result="Success" success="True" time="53.138" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uBankAccountTests" executed="true" result="Success" success="True" time="53.138" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="BankAccountTests" executed="True" result="Success" success="True" time="53.138" >
+                <results>
+                  <test-case name="Returns_empty_balance_after_opening" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Check_basic_balance" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Balance_can_increment_and_decrement" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Closed_account_throws_exception_when_checking_balance" executed="True" result="Success" success="True" time="6.160" asserts="0" />
+                  <test-case name="Change_account_balance_from_multiple_threads" executed="True" result="Success" success="True" time="46.969" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
