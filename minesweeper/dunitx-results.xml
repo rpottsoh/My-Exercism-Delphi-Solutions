@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\exercism.projects\delphi\minesweeper\MineSweeper.exe" total="12" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="0.691">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="MineSweeper.exe" executed="true" result="Success" success="True" time="0.691" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uMineSweeperTest" executed="true" result="Success" success="True" time="0.690" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="MineSweeperTest" executed="True" result="Success" success="True" time="0.690" >
+                <results>
+                  <test-case name="No_rows" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="No_columns" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="No_mines" executed="True" result="Success" success="True" time="0.103" asserts="0" />
+                  <test-case name="Board_with_only_mines" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Mine_surrounded_by_spaces" executed="True" result="Success" success="True" time="0.085" asserts="0" />
+                  <test-case name="Space_surrounded_by_mines" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Horizontal_line" executed="True" result="Success" success="True" time="0.059" asserts="0" />
+                  <test-case name="Horizontal_line_mines_at_edges" executed="True" result="Success" success="True" time="0.049" asserts="0" />
+                  <test-case name="Vertical_line" executed="True" result="Success" success="True" time="0.057" asserts="0" />
+                  <test-case name="Vertical_line_mines_at_edges" executed="True" result="Success" success="True" time="0.053" asserts="0" />
+                  <test-case name="Cross" executed="True" result="Success" success="True" time="0.120" asserts="0" />
+                  <test-case name="Large_board" executed="True" result="Success" success="True" time="0.160" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
