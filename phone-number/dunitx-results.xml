@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<test-results name="C:\projects.git\exercism.projects\delphi\phone-number\PhoneNumber.exe" total="12" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="0.002">
+<test-results name="C:\projects.git\exercism.projects\delphi\phone-number\PhoneNumber.exe" total="15" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-30" time="0.003">
   <culture-info current-culture="en" current-uiculture="en" />
-  <test-suite type="Assembly" name="PhoneNumber.exe" executed="true" result="Success" success="True" time="0.002" asserts="0">
+  <test-suite type="Assembly" name="PhoneNumber.exe" executed="true" result="Success" success="True" time="0.003" asserts="0">
     <results>
         <test-suite type="Namespace" name="uPhoneNumberTests" executed="true" result="Success" success="True" time="0.002" asserts="0" >
           <results>
               <test-suite type="Fixture" name="PhoneNumberTests" executed="True" result="Success" success="True" time="0.002" >
                 <results>
-                  <test-case name="Cleans_the_number" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Cleans_the_number" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="Cleans_numbers_with_dots" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Cleans_numbers_with_multiple_spaces" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Valid_when_11_digits_and_starting_with_1" executed="True" result="Success" success="True" time="0.000" asserts="0" />
@@ -17,7 +17,10 @@
                   <test-case name="Invalid_with_letters" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Invalid_with_punctuations" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Invalid_with_right_number_of_digits_but_letters_mixed_in" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="Has_an_area_code" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Invalid_if_area_code_does_not_start_with_2_thru_9" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Invalid_if_exchange_code_does_not_start_with_2_thru_9" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Extract_area_code" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Extract_exchange_code" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Formats_a_number" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                 </results>
               </test-suite>
