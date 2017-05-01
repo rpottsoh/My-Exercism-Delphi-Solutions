@@ -22,6 +22,16 @@ uses RegularExpressions, System.SysUtils, System.StrUtils;
 type
    TPhoneNumber = class(TInterfacedObject, IPhoneNumber)
    private
+     const
+     validFirstDigits: array[0..7] of char =('2',
+                                             '3',
+                                             '4',
+                                             '5',
+                                             '6',
+                                             '7',
+                                             '8',
+                                             '9');
+     var
      fDigitsOnly: TRegex;
      fContainsLetters: TRegex;
      fNumber: string;
@@ -111,7 +121,7 @@ end;
 
 function TPhoneNumber.IsValidCode(aCode: string): Boolean;
 begin
-  result := (not aCode.IsEmpty) and (aCode[1] in ['2'..'9']);
+  result := (not aCode.IsEmpty) and (aCode.IndexOfAny(validFirstDigits) = 0);
 end;
 
 function TPhoneNumber.ToString: string;
