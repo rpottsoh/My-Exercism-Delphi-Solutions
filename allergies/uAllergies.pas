@@ -15,11 +15,11 @@ type
    private
      fScore: integer;
      fAvailableAllergies: TDictionary<string, integer>;
-     fAllergyList: TList<string>;
      function IsInAllergyScore(allergyvalue: integer): Boolean;
      function GetAllergyList: TList<string>;
    public
      constructor create(aScore: integer);
+     destructor destroy; override;
      function AllergicTo(allergy: string): Boolean;
      property IList: TList<string> read GetAllergyList;
    end;
@@ -28,6 +28,7 @@ implementation
 
 constructor TAllergies.create(aScore: Integer);
 begin
+  inherited create;
   fScore := aScore;
   fAvailableAllergies := TDictionary<string, integer>.create;
   with fAvailableAllergies do
@@ -41,6 +42,13 @@ begin
     Add('pollen', 64);
     Add('cats', 128);
   end; //with
+end;
+
+destructor TAllergies.destroy;
+begin
+  if assigned(fAvailableAllergies) then
+    fAvailableAllergies.DisposeOf;
+  inherited Destroy;
 end;
 
 function TAllergies.IsInAllergyScore(allergyvalue: Integer): Boolean;
