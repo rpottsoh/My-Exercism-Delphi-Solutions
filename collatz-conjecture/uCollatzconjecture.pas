@@ -6,11 +6,11 @@ uses System.SysUtils;
 type
   EIllegalNumber = class(Exception);
 
-  function collatzSteps(aNumber: integer): integer;
+  function collatzSteps(aNumber: integer; aGuard: integer = 1000): integer;
 
 implementation
 
-function collatzSteps(aNumber: integer): integer;
+function collatzSteps(aNumber: integer; aGuard: integer = 1000): integer;
 
   function computeCollatzValue(aValue: integer): integer;
   begin
@@ -25,7 +25,7 @@ begin
     raise EIllegalNumber.Create('error: Only positive numbers are allowed');
 
   result := 0;
-  while (aNumber > 1) and (result < 1000) do
+  while (aNumber > 1) and (result < aGuard) do
   begin
     aNumber := computeCollatzValue(aNumber);
     inc(result);
