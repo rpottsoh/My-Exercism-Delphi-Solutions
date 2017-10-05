@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\exercism.projects\Delphi\pig-latin\PigLatin.exe" total="22" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-10-05" time="0.004">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="PigLatin.exe" executed="true" result="Success" success="True" time="0.004" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uTestPigLatin" executed="true" result="Success" success="True" time="0.003" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="PigLatinTest" executed="True" result="Success" success="True" time="0.003" >
+                <results>
+                  <test-case name="Word_beginning_with_a" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_e" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_i" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_o" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_u" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_a_vowel_and_followed_by_a_qu" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_p" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_k" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="y_is_treated_like_a_consonant_at_the_beginning_of_a_word" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="y_is_treated_like_a_vowel_at_the_end_of_a_consonant_cluster" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="y_as_second_letter_in_two_letter_word" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_x" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_q_without_a_following_u" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_ch" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_qu" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_qu_and_a_preceding_consonant" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_th" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_thr" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_sch" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_yt" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Word_beginning_with_xr" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="A_whole_phrase" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
