@@ -14,6 +14,7 @@ type
     function Add(minutesToAdd: integer): Clock;
     function Subtract(minutesToSubtract: integer): Clock;
     function ToString: string;
+    function Equal(aClock: Clock): Boolean;
   End;
 
 implementation
@@ -38,6 +39,11 @@ end;
 function Clock.ToString: string;
 begin
   result := format('%.2d:%.2d',[hours, minutes]);
+end;
+
+function Clock.Equal(aClock: Clock): Boolean;
+begin
+  result := (hours = aClock.hours) and (minutes = aClock.minutes);
 end;
 
 class function Clock.fltMod(x, y: double): integer;
