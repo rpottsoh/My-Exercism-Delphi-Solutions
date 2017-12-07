@@ -6,6 +6,8 @@ Bob answers 'Sure.' if you ask him a question.
 
 He answers 'Whoa, chill out!' if you yell at him.
 
+He answers 'Calm down, I know what I'm doing!' if you yell a question at him.
+
 He says 'Fine. Be that way!' if you address him without actually saying
 anything.
 
@@ -14,7 +16,7 @@ He answers 'Whatever.' to anything else.
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -35,6 +37,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-
