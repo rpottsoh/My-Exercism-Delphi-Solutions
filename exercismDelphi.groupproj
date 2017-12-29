@@ -3,88 +3,94 @@
         <ProjectGuid>{665F2D12-094D-44B8-BAE6-D9BA0B29DEED}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="roman-numerals\RomanNumerals.dproj">
+        <Projects Include="delphi\allergies\Allergies.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="bob\Bob.dproj">
+        <Projects Include="delphi\bank-account\BankAccount.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="leap\Leap.dproj">
+        <Projects Include="delphi\beer-song\BeerSong.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="hello-world\HelloWorld.dproj">
+        <Projects Include="delphi\binary-search\BinarySearch.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="rna-transcription\RnaTranscription.dproj">
+        <Projects Include="delphi\bob\Bob.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="raindrops\raindrops.dproj">
+        <Projects Include="delphi\book-store\BookStore.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="hamming\Hamming.dproj">
+        <Projects Include="delphi\bowling\Bowling.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="bank-account\BankAccount.dproj">
+        <Projects Include="delphi\circular-buffer\CircularBuffer.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="nucleotide-count\NucleotideCount.dproj">
+        <Projects Include="delphi\clock\Clock.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="etl\ETL.dproj">
+        <Projects Include="delphi\collatz-conjecture\Collatzconjecture.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="grains\Grains.dproj">
+        <Projects Include="delphi\etl\ETL.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="beer-song\BeerSong.dproj">
+        <Projects Include="delphi\grains\Grains.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="phone-number\PhoneNumber.dproj">
+        <Projects Include="delphi\hamming\Hamming.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="perfect-numbers\PerfectNumbers.dproj">
+        <Projects Include="delphi\hello-world\HelloWorld.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="binary-search\BinarySearch.dproj">
+        <Projects Include="delphi\isbn-verifier\ISBNVerifier.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="clock\Clock.dproj">
+        <Projects Include="delphi\leap\Leap.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="triangle\Triangle.dproj">
+        <Projects Include="delphi\minesweeper\MineSweeper.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="allergies\Allergies.dproj">
+        <Projects Include="delphi\nucleotide-count\NucleotideCount.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="saddle-points\SaddlePoints.dproj">
+        <Projects Include="delphi\perfect-numbers\PerfectNumbers.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="circular-buffer\CircularBuffer.dproj">
+        <Projects Include="delphi\phone-number\PhoneNumber.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="minesweeper\MineSweeper.dproj">
+        <Projects Include="delphi\pig-latin\PigLatin.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="bowling\Bowling.dproj">
+        <Projects Include="delphi\poker\Poker.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="book-store\BookStore.dproj">
+        <Projects Include="delphi\raindrops\raindrops.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="poker\Poker.dproj">
+        <Projects Include="delphi\reverse-string\ReverseString.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="collatz-conjecture\Collatzconjecture.dproj">
+        <Projects Include="delphi\rna-transcription\RnaTranscription.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="pig-latin\PigLatin.dproj">
+        <Projects Include="delphi\roman-numerals\RomanNumerals.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="reverse-string\ReverseString.dproj">
+        <Projects Include="delphi\saddle-points\SaddlePoints.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="wordy\Wordy.dproj">
+        <Projects Include="delphi\triangle\Triangle.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="delphi\two-fer\twofer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="delphi\wordy\Wordy.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -95,263 +101,275 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="RomanNumerals">
-        <MSBuild Projects="roman-numerals\RomanNumerals.dproj"/>
+    <Target Name="Allergies">
+        <MSBuild Projects="delphi\allergies\Allergies.dproj"/>
     </Target>
-    <Target Name="RomanNumerals:Clean">
-        <MSBuild Projects="roman-numerals\RomanNumerals.dproj" Targets="Clean"/>
+    <Target Name="Allergies:Clean">
+        <MSBuild Projects="delphi\allergies\Allergies.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="RomanNumerals:Make">
-        <MSBuild Projects="roman-numerals\RomanNumerals.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Bob">
-        <MSBuild Projects="bob\Bob.dproj"/>
-    </Target>
-    <Target Name="Bob:Clean">
-        <MSBuild Projects="bob\Bob.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Bob:Make">
-        <MSBuild Projects="bob\Bob.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Leap">
-        <MSBuild Projects="leap\Leap.dproj"/>
-    </Target>
-    <Target Name="Leap:Clean">
-        <MSBuild Projects="leap\Leap.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Leap:Make">
-        <MSBuild Projects="leap\Leap.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="HelloWorld">
-        <MSBuild Projects="hello-world\HelloWorld.dproj"/>
-    </Target>
-    <Target Name="HelloWorld:Clean">
-        <MSBuild Projects="hello-world\HelloWorld.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="HelloWorld:Make">
-        <MSBuild Projects="hello-world\HelloWorld.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="RnaTranscription">
-        <MSBuild Projects="rna-transcription\RnaTranscription.dproj"/>
-    </Target>
-    <Target Name="RnaTranscription:Clean">
-        <MSBuild Projects="rna-transcription\RnaTranscription.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="RnaTranscription:Make">
-        <MSBuild Projects="rna-transcription\RnaTranscription.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="raindrops">
-        <MSBuild Projects="raindrops\raindrops.dproj"/>
-    </Target>
-    <Target Name="raindrops:Clean">
-        <MSBuild Projects="raindrops\raindrops.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="raindrops:Make">
-        <MSBuild Projects="raindrops\raindrops.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Hamming">
-        <MSBuild Projects="hamming\Hamming.dproj"/>
-    </Target>
-    <Target Name="Hamming:Clean">
-        <MSBuild Projects="hamming\Hamming.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Hamming:Make">
-        <MSBuild Projects="hamming\Hamming.dproj" Targets="Make"/>
+    <Target Name="Allergies:Make">
+        <MSBuild Projects="delphi\allergies\Allergies.dproj" Targets="Make"/>
     </Target>
     <Target Name="BankAccount">
-        <MSBuild Projects="bank-account\BankAccount.dproj"/>
+        <MSBuild Projects="delphi\bank-account\BankAccount.dproj"/>
     </Target>
     <Target Name="BankAccount:Clean">
-        <MSBuild Projects="bank-account\BankAccount.dproj" Targets="Clean"/>
+        <MSBuild Projects="delphi\bank-account\BankAccount.dproj" Targets="Clean"/>
     </Target>
     <Target Name="BankAccount:Make">
-        <MSBuild Projects="bank-account\BankAccount.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="NucleotideCount">
-        <MSBuild Projects="nucleotide-count\NucleotideCount.dproj"/>
-    </Target>
-    <Target Name="NucleotideCount:Clean">
-        <MSBuild Projects="nucleotide-count\NucleotideCount.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="NucleotideCount:Make">
-        <MSBuild Projects="nucleotide-count\NucleotideCount.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="ETL">
-        <MSBuild Projects="etl\ETL.dproj"/>
-    </Target>
-    <Target Name="ETL:Clean">
-        <MSBuild Projects="etl\ETL.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="ETL:Make">
-        <MSBuild Projects="etl\ETL.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Grains">
-        <MSBuild Projects="grains\Grains.dproj"/>
-    </Target>
-    <Target Name="Grains:Clean">
-        <MSBuild Projects="grains\Grains.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Grains:Make">
-        <MSBuild Projects="grains\Grains.dproj" Targets="Make"/>
+        <MSBuild Projects="delphi\bank-account\BankAccount.dproj" Targets="Make"/>
     </Target>
     <Target Name="BeerSong">
-        <MSBuild Projects="beer-song\BeerSong.dproj"/>
+        <MSBuild Projects="delphi\beer-song\BeerSong.dproj"/>
     </Target>
     <Target Name="BeerSong:Clean">
-        <MSBuild Projects="beer-song\BeerSong.dproj" Targets="Clean"/>
+        <MSBuild Projects="delphi\beer-song\BeerSong.dproj" Targets="Clean"/>
     </Target>
     <Target Name="BeerSong:Make">
-        <MSBuild Projects="beer-song\BeerSong.dproj" Targets="Make"/>
+        <MSBuild Projects="delphi\beer-song\BeerSong.dproj" Targets="Make"/>
     </Target>
-    <Target Name="PhoneNumber">
-        <MSBuild Projects="phone-number\PhoneNumber.dproj"/>
+    <Target Name="BinarySearch">
+        <MSBuild Projects="delphi\binary-search\BinarySearch.dproj"/>
     </Target>
-    <Target Name="PhoneNumber:Clean">
-        <MSBuild Projects="phone-number\PhoneNumber.dproj" Targets="Clean"/>
+    <Target Name="BinarySearch:Clean">
+        <MSBuild Projects="delphi\binary-search\BinarySearch.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="PhoneNumber:Make">
-        <MSBuild Projects="phone-number\PhoneNumber.dproj" Targets="Make"/>
+    <Target Name="BinarySearch:Make">
+        <MSBuild Projects="delphi\binary-search\BinarySearch.dproj" Targets="Make"/>
     </Target>
-    <Target Name="PerfectNumbers">
-        <MSBuild Projects="perfect-numbers\PerfectNumbers.dproj"/>
+    <Target Name="Bob">
+        <MSBuild Projects="delphi\bob\Bob.dproj"/>
+    </Target>
+    <Target Name="Bob:Clean">
+        <MSBuild Projects="delphi\bob\Bob.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Bob:Make">
+        <MSBuild Projects="delphi\bob\Bob.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BookStore">
+        <MSBuild Projects="delphi\book-store\BookStore.dproj"/>
+    </Target>
+    <Target Name="BookStore:Clean">
+        <MSBuild Projects="delphi\book-store\BookStore.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BookStore:Make">
+        <MSBuild Projects="delphi\book-store\BookStore.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Bowling">
+        <MSBuild Projects="delphi\bowling\Bowling.dproj"/>
+    </Target>
+    <Target Name="Bowling:Clean">
+        <MSBuild Projects="delphi\bowling\Bowling.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Bowling:Make">
+        <MSBuild Projects="delphi\bowling\Bowling.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CircularBuffer">
+        <MSBuild Projects="delphi\circular-buffer\CircularBuffer.dproj"/>
+    </Target>
+    <Target Name="CircularBuffer:Clean">
+        <MSBuild Projects="delphi\circular-buffer\CircularBuffer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CircularBuffer:Make">
+        <MSBuild Projects="delphi\circular-buffer\CircularBuffer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Clock">
+        <MSBuild Projects="delphi\clock\Clock.dproj"/>
+    </Target>
+    <Target Name="Clock:Clean">
+        <MSBuild Projects="delphi\clock\Clock.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Clock:Make">
+        <MSBuild Projects="delphi\clock\Clock.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Collatzconjecture">
+        <MSBuild Projects="delphi\collatz-conjecture\Collatzconjecture.dproj"/>
+    </Target>
+    <Target Name="Collatzconjecture:Clean">
+        <MSBuild Projects="delphi\collatz-conjecture\Collatzconjecture.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Collatzconjecture:Make">
+        <MSBuild Projects="delphi\collatz-conjecture\Collatzconjecture.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ETL">
+        <MSBuild Projects="delphi\etl\ETL.dproj"/>
+    </Target>
+    <Target Name="ETL:Clean">
+        <MSBuild Projects="delphi\etl\ETL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ETL:Make">
+        <MSBuild Projects="delphi\etl\ETL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Grains">
+        <MSBuild Projects="delphi\grains\Grains.dproj"/>
+    </Target>
+    <Target Name="Grains:Clean">
+        <MSBuild Projects="delphi\grains\Grains.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Grains:Make">
+        <MSBuild Projects="delphi\grains\Grains.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Hamming">
+        <MSBuild Projects="delphi\hamming\Hamming.dproj"/>
+    </Target>
+    <Target Name="Hamming:Clean">
+        <MSBuild Projects="delphi\hamming\Hamming.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Hamming:Make">
+        <MSBuild Projects="delphi\hamming\Hamming.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HelloWorld">
+        <MSBuild Projects="delphi\hello-world\HelloWorld.dproj"/>
+    </Target>
+    <Target Name="HelloWorld:Clean">
+        <MSBuild Projects="delphi\hello-world\HelloWorld.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HelloWorld:Make">
+        <MSBuild Projects="delphi\hello-world\HelloWorld.dproj" Targets="Make"/>
+    </Target>
     <Target Name="ISBNVerifier">
         <MSBuild Projects="delphi\isbn-verifier\ISBNVerifier.dproj"/>
     </Target>
-    <Target Name="PerfectNumbers:Clean">
-        <MSBuild Projects="perfect-numbers\PerfectNumbers.dproj" Targets="Clean"/>
     <Target Name="ISBNVerifier:Clean">
         <MSBuild Projects="delphi\isbn-verifier\ISBNVerifier.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="PerfectNumbers:Make">
-        <MSBuild Projects="perfect-numbers\PerfectNumbers.dproj" Targets="Make"/>
     <Target Name="ISBNVerifier:Make">
         <MSBuild Projects="delphi\isbn-verifier\ISBNVerifier.dproj" Targets="Make"/>
     </Target>
-    <Target Name="BinarySearch">
-        <MSBuild Projects="binary-search\BinarySearch.dproj"/>
+    <Target Name="Leap">
+        <MSBuild Projects="delphi\leap\Leap.dproj"/>
     </Target>
-    <Target Name="BinarySearch:Clean">
-        <MSBuild Projects="binary-search\BinarySearch.dproj" Targets="Clean"/>
+    <Target Name="Leap:Clean">
+        <MSBuild Projects="delphi\leap\Leap.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="BinarySearch:Make">
-        <MSBuild Projects="binary-search\BinarySearch.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Clock">
-        <MSBuild Projects="clock\Clock.dproj"/>
-    </Target>
-    <Target Name="Clock:Clean">
-        <MSBuild Projects="clock\Clock.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Clock:Make">
-        <MSBuild Projects="clock\Clock.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Triangle">
-        <MSBuild Projects="triangle\Triangle.dproj"/>
-    </Target>
-    <Target Name="Triangle:Clean">
-        <MSBuild Projects="triangle\Triangle.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Triangle:Make">
-        <MSBuild Projects="triangle\Triangle.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Allergies">
-        <MSBuild Projects="allergies\Allergies.dproj"/>
-    </Target>
-    <Target Name="Allergies:Clean">
-        <MSBuild Projects="allergies\Allergies.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Allergies:Make">
-        <MSBuild Projects="allergies\Allergies.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="SaddlePoints">
-        <MSBuild Projects="saddle-points\SaddlePoints.dproj"/>
-    </Target>
-    <Target Name="SaddlePoints:Clean">
-        <MSBuild Projects="saddle-points\SaddlePoints.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="SaddlePoints:Make">
-        <MSBuild Projects="saddle-points\SaddlePoints.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="CircularBuffer">
-        <MSBuild Projects="circular-buffer\CircularBuffer.dproj"/>
-    </Target>
-    <Target Name="CircularBuffer:Clean">
-        <MSBuild Projects="circular-buffer\CircularBuffer.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="CircularBuffer:Make">
-        <MSBuild Projects="circular-buffer\CircularBuffer.dproj" Targets="Make"/>
+    <Target Name="Leap:Make">
+        <MSBuild Projects="delphi\leap\Leap.dproj" Targets="Make"/>
     </Target>
     <Target Name="MineSweeper">
-        <MSBuild Projects="minesweeper\MineSweeper.dproj"/>
+        <MSBuild Projects="delphi\minesweeper\MineSweeper.dproj"/>
     </Target>
     <Target Name="MineSweeper:Clean">
-        <MSBuild Projects="minesweeper\MineSweeper.dproj" Targets="Clean"/>
+        <MSBuild Projects="delphi\minesweeper\MineSweeper.dproj" Targets="Clean"/>
     </Target>
     <Target Name="MineSweeper:Make">
-        <MSBuild Projects="minesweeper\MineSweeper.dproj" Targets="Make"/>
+        <MSBuild Projects="delphi\minesweeper\MineSweeper.dproj" Targets="Make"/>
     </Target>
-    <Target Name="Bowling">
-        <MSBuild Projects="bowling\Bowling.dproj"/>
+    <Target Name="NucleotideCount">
+        <MSBuild Projects="delphi\nucleotide-count\NucleotideCount.dproj"/>
     </Target>
-    <Target Name="Bowling:Clean">
-        <MSBuild Projects="bowling\Bowling.dproj" Targets="Clean"/>
+    <Target Name="NucleotideCount:Clean">
+        <MSBuild Projects="delphi\nucleotide-count\NucleotideCount.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="Bowling:Make">
-        <MSBuild Projects="bowling\Bowling.dproj" Targets="Make"/>
+    <Target Name="NucleotideCount:Make">
+        <MSBuild Projects="delphi\nucleotide-count\NucleotideCount.dproj" Targets="Make"/>
     </Target>
-    <Target Name="BookStore">
-        <MSBuild Projects="book-store\BookStore.dproj"/>
+    <Target Name="PerfectNumbers">
+        <MSBuild Projects="delphi\perfect-numbers\PerfectNumbers.dproj"/>
     </Target>
-    <Target Name="BookStore:Clean">
-        <MSBuild Projects="book-store\BookStore.dproj" Targets="Clean"/>
+    <Target Name="PerfectNumbers:Clean">
+        <MSBuild Projects="delphi\perfect-numbers\PerfectNumbers.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="BookStore:Make">
-        <MSBuild Projects="book-store\BookStore.dproj" Targets="Make"/>
+    <Target Name="PerfectNumbers:Make">
+        <MSBuild Projects="delphi\perfect-numbers\PerfectNumbers.dproj" Targets="Make"/>
     </Target>
-    <Target Name="Poker">
-        <MSBuild Projects="poker\Poker.dproj"/>
+    <Target Name="PhoneNumber">
+        <MSBuild Projects="delphi\phone-number\PhoneNumber.dproj"/>
     </Target>
-    <Target Name="Poker:Clean">
-        <MSBuild Projects="poker\Poker.dproj" Targets="Clean"/>
+    <Target Name="PhoneNumber:Clean">
+        <MSBuild Projects="delphi\phone-number\PhoneNumber.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="Poker:Make">
-        <MSBuild Projects="poker\Poker.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Collatzconjecture">
-        <MSBuild Projects="collatz-conjecture\Collatzconjecture.dproj"/>
-    </Target>
-    <Target Name="Collatzconjecture:Clean">
-        <MSBuild Projects="collatz-conjecture\Collatzconjecture.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Collatzconjecture:Make">
-        <MSBuild Projects="collatz-conjecture\Collatzconjecture.dproj" Targets="Make"/>
+    <Target Name="PhoneNumber:Make">
+        <MSBuild Projects="delphi\phone-number\PhoneNumber.dproj" Targets="Make"/>
     </Target>
     <Target Name="PigLatin">
-        <MSBuild Projects="pig-latin\PigLatin.dproj"/>
+        <MSBuild Projects="delphi\pig-latin\PigLatin.dproj"/>
     </Target>
     <Target Name="PigLatin:Clean">
-        <MSBuild Projects="pig-latin\PigLatin.dproj" Targets="Clean"/>
+        <MSBuild Projects="delphi\pig-latin\PigLatin.dproj" Targets="Clean"/>
     </Target>
     <Target Name="PigLatin:Make">
-        <MSBuild Projects="pig-latin\PigLatin.dproj" Targets="Make"/>
+        <MSBuild Projects="delphi\pig-latin\PigLatin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Poker">
+        <MSBuild Projects="delphi\poker\Poker.dproj"/>
+    </Target>
+    <Target Name="Poker:Clean">
+        <MSBuild Projects="delphi\poker\Poker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Poker:Make">
+        <MSBuild Projects="delphi\poker\Poker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="raindrops">
+        <MSBuild Projects="delphi\raindrops\raindrops.dproj"/>
+    </Target>
+    <Target Name="raindrops:Clean">
+        <MSBuild Projects="delphi\raindrops\raindrops.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="raindrops:Make">
+        <MSBuild Projects="delphi\raindrops\raindrops.dproj" Targets="Make"/>
     </Target>
     <Target Name="ReverseString">
-        <MSBuild Projects="reverse-string\ReverseString.dproj"/>
+        <MSBuild Projects="delphi\reverse-string\ReverseString.dproj"/>
     </Target>
     <Target Name="ReverseString:Clean">
-        <MSBuild Projects="reverse-string\ReverseString.dproj" Targets="Clean"/>
+        <MSBuild Projects="delphi\reverse-string\ReverseString.dproj" Targets="Clean"/>
     </Target>
     <Target Name="ReverseString:Make">
-        <MSBuild Projects="reverse-string\ReverseString.dproj" Targets="Make"/>
+        <MSBuild Projects="delphi\reverse-string\ReverseString.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RnaTranscription">
+        <MSBuild Projects="delphi\rna-transcription\RnaTranscription.dproj"/>
+    </Target>
+    <Target Name="RnaTranscription:Clean">
+        <MSBuild Projects="delphi\rna-transcription\RnaTranscription.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RnaTranscription:Make">
+        <MSBuild Projects="delphi\rna-transcription\RnaTranscription.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RomanNumerals">
+        <MSBuild Projects="delphi\roman-numerals\RomanNumerals.dproj"/>
+    </Target>
+    <Target Name="RomanNumerals:Clean">
+        <MSBuild Projects="delphi\roman-numerals\RomanNumerals.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RomanNumerals:Make">
+        <MSBuild Projects="delphi\roman-numerals\RomanNumerals.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SaddlePoints">
+        <MSBuild Projects="delphi\saddle-points\SaddlePoints.dproj"/>
+    </Target>
+    <Target Name="SaddlePoints:Clean">
+        <MSBuild Projects="delphi\saddle-points\SaddlePoints.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SaddlePoints:Make">
+        <MSBuild Projects="delphi\saddle-points\SaddlePoints.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Triangle">
+        <MSBuild Projects="delphi\triangle\Triangle.dproj"/>
+    </Target>
+    <Target Name="Triangle:Clean">
+        <MSBuild Projects="delphi\triangle\Triangle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Triangle:Make">
+        <MSBuild Projects="delphi\triangle\Triangle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="twofer">
+        <MSBuild Projects="delphi\two-fer\twofer.dproj"/>
+    </Target>
+    <Target Name="twofer:Clean">
+        <MSBuild Projects="delphi\two-fer\twofer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="twofer:Make">
+        <MSBuild Projects="delphi\two-fer\twofer.dproj" Targets="Make"/>
     </Target>
     <Target Name="Wordy">
-        <MSBuild Projects="wordy\Wordy.dproj"/>
+        <MSBuild Projects="delphi\wordy\Wordy.dproj"/>
     </Target>
     <Target Name="Wordy:Clean">
-        <MSBuild Projects="wordy\Wordy.dproj" Targets="Clean"/>
+        <MSBuild Projects="delphi\wordy\Wordy.dproj" Targets="Clean"/>
     </Target>
     <Target Name="Wordy:Make">
-        <MSBuild Projects="wordy\Wordy.dproj" Targets="Make"/>
+        <MSBuild Projects="delphi\wordy\Wordy.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
         <CallTarget Targets="Allergies;BankAccount;BeerSong;BinarySearch;Bob;BookStore;Bowling;CircularBuffer;Clock;Collatzconjecture;ETL;Grains;Hamming;HelloWorld;ISBNVerifier;Leap;MineSweeper;NucleotideCount;PerfectNumbers;PhoneNumber;PigLatin;Poker;raindrops;ReverseString;RnaTranscription;RomanNumerals;SaddlePoints;Triangle;twofer;Wordy"/>
