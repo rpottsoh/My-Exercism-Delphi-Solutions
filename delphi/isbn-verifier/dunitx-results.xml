@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\isbn-verifier\ISBNVerifier.exe" total="14" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-12-29" time="0.003">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="ISBNVerifier.exe" executed="true" result="Success" success="True" time="0.003" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uTestISBNVerifier" executed="true" result="Success" success="True" time="0.003" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="ISBNVerifierTest" executed="True" result="Success" success="True" time="0.003" >
+                <results>
+                  <test-case name="valid_isbn_number" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="invalid_isbn_check_digit" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="valid_isbn_number_with_a_check_digit_of_10" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="check_digit_is_a_character_other_than_X" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="invalid_character_in_isbn" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="X_is_only_valid_as_a_check_digit" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="valid_isbn_without_separating_dashes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="isbn_without_separating_dashes_and_X_as_check_digit" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="isbn_without_check_digit_and_dashes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="too_long_isbn_and_no_dashes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="isbn_without_check_digit" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="too_long_isbn" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="check_digit_of_X_should_not_be_used_for_0" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="empty_input" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
