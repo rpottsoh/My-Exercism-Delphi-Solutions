@@ -93,6 +93,9 @@
         <Projects Include="delphi\wordy\Wordy.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="delphi\secret-handshake\SecretHandshake.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -371,14 +374,23 @@
     <Target Name="Wordy:Make">
         <MSBuild Projects="delphi\wordy\Wordy.dproj" Targets="Make"/>
     </Target>
+    <Target Name="SecretHandshake">
+        <MSBuild Projects="delphi\secret-handshake\SecretHandshake.dproj"/>
+    </Target>
+    <Target Name="SecretHandshake:Clean">
+        <MSBuild Projects="delphi\secret-handshake\SecretHandshake.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SecretHandshake:Make">
+        <MSBuild Projects="delphi\secret-handshake\SecretHandshake.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Allergies;BankAccount;BeerSong;BinarySearch;Bob;BookStore;Bowling;CircularBuffer;Clock;Collatzconjecture;ETL;Grains;Hamming;HelloWorld;ISBNVerifier;Leap;MineSweeper;NucleotideCount;PerfectNumbers;PhoneNumber;PigLatin;Poker;raindrops;ReverseString;RnaTranscription;RomanNumerals;SaddlePoints;Triangle;twofer;Wordy"/>
+        <CallTarget Targets="Allergies;BankAccount;BeerSong;BinarySearch;Bob;BookStore;Bowling;CircularBuffer;Clock;Collatzconjecture;ETL;Grains;Hamming;HelloWorld;ISBNVerifier;Leap;MineSweeper;NucleotideCount;PerfectNumbers;PhoneNumber;PigLatin;Poker;raindrops;ReverseString;RnaTranscription;RomanNumerals;SaddlePoints;Triangle;twofer;Wordy;SecretHandshake"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Allergies:Clean;BankAccount:Clean;BeerSong:Clean;BinarySearch:Clean;Bob:Clean;BookStore:Clean;Bowling:Clean;CircularBuffer:Clean;Clock:Clean;Collatzconjecture:Clean;ETL:Clean;Grains:Clean;Hamming:Clean;HelloWorld:Clean;ISBNVerifier:Clean;Leap:Clean;MineSweeper:Clean;NucleotideCount:Clean;PerfectNumbers:Clean;PhoneNumber:Clean;PigLatin:Clean;Poker:Clean;raindrops:Clean;ReverseString:Clean;RnaTranscription:Clean;RomanNumerals:Clean;SaddlePoints:Clean;Triangle:Clean;twofer:Clean;Wordy:Clean"/>
+        <CallTarget Targets="Allergies:Clean;BankAccount:Clean;BeerSong:Clean;BinarySearch:Clean;Bob:Clean;BookStore:Clean;Bowling:Clean;CircularBuffer:Clean;Clock:Clean;Collatzconjecture:Clean;ETL:Clean;Grains:Clean;Hamming:Clean;HelloWorld:Clean;ISBNVerifier:Clean;Leap:Clean;MineSweeper:Clean;NucleotideCount:Clean;PerfectNumbers:Clean;PhoneNumber:Clean;PigLatin:Clean;Poker:Clean;raindrops:Clean;ReverseString:Clean;RnaTranscription:Clean;RomanNumerals:Clean;SaddlePoints:Clean;Triangle:Clean;twofer:Clean;Wordy:Clean;SecretHandshake:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Allergies:Make;BankAccount:Make;BeerSong:Make;BinarySearch:Make;Bob:Make;BookStore:Make;Bowling:Make;CircularBuffer:Make;Clock:Make;Collatzconjecture:Make;ETL:Make;Grains:Make;Hamming:Make;HelloWorld:Make;ISBNVerifier:Make;Leap:Make;MineSweeper:Make;NucleotideCount:Make;PerfectNumbers:Make;PhoneNumber:Make;PigLatin:Make;Poker:Make;raindrops:Make;ReverseString:Make;RnaTranscription:Make;RomanNumerals:Make;SaddlePoints:Make;Triangle:Make;twofer:Make;Wordy:Make"/>
+        <CallTarget Targets="Allergies:Make;BankAccount:Make;BeerSong:Make;BinarySearch:Make;Bob:Make;BookStore:Make;Bowling:Make;CircularBuffer:Make;Clock:Make;Collatzconjecture:Make;ETL:Make;Grains:Make;Hamming:Make;HelloWorld:Make;ISBNVerifier:Make;Leap:Make;MineSweeper:Make;NucleotideCount:Make;PerfectNumbers:Make;PhoneNumber:Make;PigLatin:Make;Poker:Make;raindrops:Make;ReverseString:Make;RnaTranscription:Make;RomanNumerals:Make;SaddlePoints:Make;Triangle:Make;twofer:Make;Wordy:Make;SecretHandshake:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
