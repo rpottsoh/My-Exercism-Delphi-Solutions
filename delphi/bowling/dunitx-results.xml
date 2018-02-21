@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<<<<<<< Updated upstream
 <test-results name="C:\projects.git\exercism.projects\delphi\bowling\Bowling.exe" total="24" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="7.888">
   <culture-info current-culture="en" current-uiculture="en" />
   <test-suite type="Assembly" name="Bowling.exe" executed="true" result="Success" success="True" time="7.888" asserts="0">
@@ -6,6 +7,15 @@
         <test-suite type="Namespace" name="uBowlingTests" executed="true" result="Success" success="True" time="7.888" asserts="0" >
           <results>
               <test-suite type="Fixture" name="BowlingTests" executed="True" result="Success" success="True" time="7.888" >
+=======
+<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\bowling\Bowling.exe" total="30" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-02-21" time="0.225">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="Bowling.exe" executed="true" result="Success" success="True" time="0.225" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uBowlingTests" executed="true" result="Success" success="True" time="0.225" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="BowlingTests" executed="True" result="Success" success="True" time="0.225" >
+>>>>>>> Stashed changes
                 <results>
                   <test-case name="Should_be_able_to_score_a_game_with_all_zeros" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Should_be_able_to_score_a_game_with_no_strikes_or_spares" executed="True" result="Success" success="True" time="0.000" asserts="0" />
@@ -21,6 +31,7 @@
                   <test-case name="Strikes_with_the_two_roll_bonus_do_not_get_bonus_rolls" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="A_strike_with_the_one_roll_bonus_after_a_spare_in_the_last_frame_does_not_get_a_bonus" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="All_strikes_is_a_perfect_game" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+<<<<<<< Updated upstream
                   <test-case name="Rolls_can_not_score_negative_points" executed="True" result="Success" success="True" time="7.854" asserts="0" />
                   <test-case name="A_roll_can_not_score_more_than_10_points" executed="True" result="Success" success="True" time="0.012" asserts="0" />
                   <test-case name="Two_rolls_in_a_frame_can_not_score_more_than_10_points" executed="True" result="Success" success="True" time="0.003" asserts="0" />
@@ -31,6 +42,24 @@
                   <test-case name="Bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                   <test-case name="Both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated" executed="True" result="Success" success="True" time="0.003" asserts="0" />
                   <test-case name="Bonus_roll_for_a_spare_in_the_last_frame_must_be_rolled_before_score_can_be_calculated" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+=======
+                  <test-case name="Rolls_cannot_score_negative_points" executed="True" result="Success" success="True" time="0.049" asserts="0" />
+                  <test-case name="A_roll_cannot_score_more_than_10_points" executed="True" result="Success" success="True" time="0.024" asserts="0" />
+                  <test-case name="Two_rolls_in_a_frame_cannot_score_more_than_10_points" executed="True" result="Success" success="True" time="0.024" asserts="0" />
+                  <test-case name="Bonus_roll_after_a_strike_in_the_last_frame_cannot_score_more_than_10_points" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Two_bonus_rolls_after_a_strike_in_the_last_frame_cannot_score_more_than_10_points" executed="True" result="Success" success="True" time="0.032" asserts="0" />
+                  <test-case name="Two_bonus_rolls_after_a_strike_in_the_last_frame_can_score_more_than_10_points_if_one_is_a_strike" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="The_second_bonus_rolls_after_a_strike_in_the_last_frame_cannot_be_a_strike_if_the_first_one_is_not_a_strike" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Second_bonus_roll_after_a_strike_in_the_last_frame_cannot_score_more_than_10_points" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="An_unstarted_game_cannot_be_scored" executed="True" result="Success" success="True" time="0.016" asserts="0" />
+                  <test-case name="An_incomplete_game_cannot_be_scored" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                  <test-case name="Cannot_roll_if_game_already_has_ten_frames" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated" executed="True" result="Success" success="True" time="0.016" asserts="0" />
+                  <test-case name="Both_bonus_rolls_for_a_strike_in_the_last_frame_must_be_rolled_before_score_can_be_calculated" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                  <test-case name="Bonus_roll_for_a_spare_in_the_last_frame_must_be_rolled_before_score_can_be_calculated" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                  <test-case name="Cannot_roll_after_bonus_roll_for_spare" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Cannot_roll_after_bonus_rolls_for_strike" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+>>>>>>> Stashed changes
                 </results>
               </test-suite>
           </results>
