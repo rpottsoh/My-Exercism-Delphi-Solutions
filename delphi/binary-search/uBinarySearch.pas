@@ -20,7 +20,7 @@ begin
   if (input[middleIndex] = target) then
     result := middleIndex
   else
-    if (middleIndex <= Low(input)) or (middleIndex >= High(input)) then
+    if (middleIndex <= Low(input)) or (middleIndex >= High(input)) or (minIndex = maxIndex) then
       result := -1
     else
       if input[middleIndex] > target then
