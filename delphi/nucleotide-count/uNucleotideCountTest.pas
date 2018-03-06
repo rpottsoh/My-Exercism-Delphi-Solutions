@@ -4,53 +4,42 @@ interface
 uses
   DUnitX.TestFramework, System.Generics.Collections;
 
+const
+  CanonicalVersion = '1.3.0';
+
 type
 
-  [TestFixture]
+  [TestFixture('count all nucleotides in a strand')]
   NucleoTideCountTest = class(TObject)
-  private
-    procedure CompareDictionaries(Expected, Actual: TDictionary<char, integer>);
   public
     [Test]
     procedure Validate_CompareDictionaries;
 
     [Test]
-//  [Ignore('Comment the "[Ignore]" statement to run the test')]
-    procedure Has_no_nucleotides;
+//    [Ignore('Comment the "[Ignore]" statement to run the test')]
+    procedure empty_strand;
 
     [Test]
 //    [Ignore]
-    procedure Has_no_adenosine;
+    procedure can_count_one_nucleotide_in_single_character_input;
 
     [Test]
 //    [Ignore]
-    procedure Repetitive_cytidine_gets_counts;
+    procedure strand_with_repeated_nucleotide;
 
     [Test]
 //    [Ignore]
-    procedure Repetitive_sequence_has_only_guanosine;
+    procedure strand_with_multiple_nucleotides;
 
     [Test]
 //    [Ignore]
-    procedure Counts_only_thymidine;
-
-    [Test]
-//    [Ignore]
-    procedure Counts_a_nucleotide_only_once;
-
-    [Test]
-//    [Ignore]
-    procedure Validates_nucleotides;
-
-    [Test]
-//    [Ignore]
-    procedure Counts_all_nucleotides;
+    procedure strand_with_invalid_nucleotides;
   end;
 
 implementation
 uses SysUtils, uNucleotideCount;
 
-procedure NucleoTideCountTest.CompareDictionaries(Expected, Actual: TDictionary<Char, Integer>);
+procedure CompareDictionaries(Expected, Actual: TDictionary<Char, Integer>);
 var expectedArray,
     actualArray: TArray<TPair<char, integer>>;
     i: integer;
@@ -81,7 +70,7 @@ begin
   CompareDictionaries(expected, actual);
 end;
 
-procedure NucleoTideCountTest.Has_no_nucleotides;
+procedure NucleoTideCountTest.empty_strand;
 var dna: TDNA;
     expected: TDictionary<char, integer>;
 begin
@@ -96,27 +85,7 @@ begin
   CompareDictionaries(expected, dna.NucleotideCounts);
 end;
 
-procedure NucleoTideCountTest.Has_no_adenosine;
-var dna: TDNA;
-    inStr: string;
-begin
-  inStr := '';
-  dna := TDNA.Create(inStr);
-
-  Assert.AreEqual(length(inStr), dna.Count('A'));
-end;
-
-procedure NucleoTideCountTest.Repetitive_cytidine_gets_counts;
-var dna: TDNA;
-    inStr: string;
-begin
-  inStr := 'CCCCC';
-  dna := TDNA.Create(inStr);
-
-  Assert.AreEqual(length(inStr), dna.Count('C'));
-end;
-
-procedure NucleoTideCountTest.Repetitive_sequence_has_only_guanosine;
+procedure NucleoTideCountTest.strand_with_repeated_nucleotide;
 var dna: TDNA;
     expected: TDictionary<char, integer>;
     inStr: string;
@@ -125,51 +94,46 @@ begin
   expected.Add('A',0);
   expected.Add('T',0);
   expected.Add('C',0);
-  expected.Add('G',8);
-  inStr := 'GGGGGGGG';
+  expected.Add('G',7);
+  inStr := 'GGGGGGG';
 
   dna := TDNA.Create(inStr);
 
   CompareDictionaries(expected, dna.NucleotideCounts);
 end;
 
-procedure NucleoTideCountTest.Counts_only_thymidine;
-var dna: TDNA;
-    inStr: string;
-begin
-  inStr := 'GGGGTAACCCGG';
-  dna := TDNA.Create(inStr);
-
-  Assert.AreEqual(length('T'), dna.Count('T'));
-end;
-
-procedure NucleoTideCountTest.Counts_a_nucleotide_only_once;
-var dna: TDNA;
-    inStr: string;
-begin
-  inStr := 'GGTTGG';
-  dna := TDNA.Create(inStr);
-  dna.Count('T');
-
-  Assert.AreEqual(2, dna.Count('T'));
-end;
-
-procedure NucleoTideCountTest.Validates_nucleotides;
+procedure NucleoTideCountTest.strand_with_invalid_nucleotides;
 var MyProc: TTestLocalMethod;
 begin
   MyProc := procedure
             var dna: TDNA;
                 inStr: string;
             begin
-              inStr := 'GGTTGG';
+              inStr := 'AGXXACT';
               dna := TDNA.Create(inStr);
               dna.Count('X');
             end;
-
-  Assert.WillRaise(MyProc, EInvalidNucleotideException);
+  Assert.WillRaiseWithMessage(MyProc,EInvalidNucleotideException,'Invalid nucleotide in strand');
 end;
 
-procedure NucleoTideCountTest.Counts_all_nucleotides;
+procedure NucleoTideCountTest.can_count_one_nucleotide_in_single_character_input;
+var dna: TDNA;
+    expected: TDictionary<char, integer>;
+    inStr: string;
+begin
+  expected := TDictionary<char, integer>.Create;
+  expected.Add('A',0);
+  expected.Add('T',0);
+  expected.Add('C',0);
+  expected.Add('G',1);
+  inStr := 'G';
+
+  dna := TDNA.Create(inStr);
+
+  CompareDictionaries(expected, dna.NucleotideCounts);
+end;
+
+procedure NucleoTideCountTest.strand_with_multiple_nucleotides;
 var dna: TDNA;
     expected: TDictionary<char, integer>;
     inStr: string;
