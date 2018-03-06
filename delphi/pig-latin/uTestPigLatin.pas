@@ -4,8 +4,10 @@ interface
 uses
   DUnitX.TestFramework;
 
+const
+  CanonicalVersion = '1.2.0';
+
 type
-  {$M+}
   [TestFixture]
   PigLatinTest = class(TObject)
   published
@@ -32,15 +34,6 @@ type
 
 //    [Ignore]
     procedure Word_beginning_with_k;
-
-//    [Ignore]
-    procedure y_is_treated_like_a_consonant_at_the_beginning_of_a_word;
-
-//    [Ignore]
-    procedure y_is_treated_like_a_vowel_at_the_end_of_a_consonant_cluster;
-
-//    [Ignore]
-    procedure y_as_second_letter_in_two_letter_word;
 
 //    [Ignore]
     procedure Word_beginning_with_x;
@@ -73,9 +66,17 @@ type
     procedure Word_beginning_with_xr;
 
 //    [Ignore]
+    procedure y_is_treated_like_a_consonant_at_the_beginning_of_a_word;
+
+//    [Ignore]
+    procedure y_is_treated_like_a_vowel_at_the_end_of_a_consonant_cluster;
+
+//    [Ignore]
+    procedure y_as_second_letter_in_two_letter_word;
+
+//    [Ignore]
     procedure A_whole_phrase;
   end;
-  {$M-}
 
 implementation
 uses uPigLatin;
