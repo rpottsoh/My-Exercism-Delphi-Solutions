@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<test-results name="C:\projects.git\exercism.projects\delphi\saddle-points\SaddlePoints.exe" total="6" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-04-08" time="0.001">
+<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\saddle-points\SaddlePoints.exe" total="5" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-03-05" time="0.002">
   <culture-info current-culture="en" current-uiculture="en" />
-  <test-suite type="Assembly" name="SaddlePoints.exe" executed="true" result="Success" success="True" time="0.001" asserts="0">
+  <test-suite type="Assembly" name="SaddlePoints.exe" executed="true" result="Success" success="True" time="0.002" asserts="0">
     <results>
-        <test-suite type="Namespace" name="uSaddlePointsTests" executed="true" result="Success" success="True" time="0.001" asserts="0" >
+        <test-suite type="Namespace" name="uSaddlePointsTests" executed="true" result="Success" success="True" time="0.002" asserts="0" >
           <results>
-              <test-suite type="Fixture" name="TSaddlePointTests" executed="True" result="Success" success="True" time="0.001" >
+              <test-suite type="Fixture" name="TSaddlePointTests" executed="True" result="Success" success="True" time="0.002" >
                 <results>
-                  <test-case name="Readme_example" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="No_saddle_point" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="Saddle_point" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="Another_saddle_point" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="Multiple_saddle_points" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                  <test-case name="Five_by_five_matrix" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_identify_single_saddle_point" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_identify_that_empty_matrix_has_no_saddle_points" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_identify_lack_of_saddle_points_when_there_are_none" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_identify_multiple_saddle_points" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Can_identify_saddle_point_in_bottom_right_corner" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                 </results>
               </test-suite>
           </results>
