@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\projects.git\My-Exercism-Solutions\delphi\word-count\WordCount.exe" total="12" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-06-21" time="0.003">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="WordCount.exe" executed="true" result="Success" success="True" time="0.003" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uWordCountTests" executed="true" result="Success" success="True" time="0.002" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="WordCountTests" executed="True" result="Success" success="True" time="0.002" >
+                <results>
+                  <test-case name="Validate_CompareDictionaries" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Count_one_word" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Count_one_of_each_word" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Multiple_occurrences_of_a_word" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Handles_cramped_lists" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Handles_expanded_lists" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Ignore_punctuation" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Include_numbers" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Normalize_case" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="With_apostrophes" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="With_quotations" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Multiple_spaces_not_detected_as_a_word" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
