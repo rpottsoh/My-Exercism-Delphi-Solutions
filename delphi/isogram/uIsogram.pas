@@ -1,13 +1,11 @@
 unit uIsogram;
 
 interface
-uses
-  System.Generics.Collections;
 
 function isIsogram(aWords: string): Boolean;
 
 implementation
-uses SysUtils;
+uses System.Generics.Collections, SysUtils;
 
 function isIsogram(aWords: string): Boolean;
 var
