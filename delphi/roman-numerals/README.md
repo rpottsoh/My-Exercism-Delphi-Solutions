@@ -14,7 +14,7 @@ The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice
 these letters have lots of straight lines and are hence easy to hack
 into stone tablets).
 
-```
+```text
  1  => I
 10  => X
  7  => VII
@@ -45,7 +45,7 @@ See also: http://www.novaroma.org/via_romana/numbers.html
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -66,6 +66,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 The Roman Numeral Kata [http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals](http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

@@ -4,7 +4,7 @@ Given a year, report if it is a leap year.
 
 The tricky thing here is that a leap year in the Gregorian calendar occurs:
 
-```plain
+```text
 on every year that is evenly divisible by 4
   except every year that is evenly divisible by 100
     unless the year is also evenly divisible by 400
@@ -29,7 +29,7 @@ phenomenon, go watch [this youtube video][video].
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -50,6 +50,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

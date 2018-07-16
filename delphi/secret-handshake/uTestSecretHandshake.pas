@@ -5,7 +5,7 @@ uses
   DUnitX.TestFramework;
 
 const
-  CanonicalVersion = '1.1.0';
+  CanonicalVersion = '1.2.0';
 
 type
   [TestFixture]
@@ -18,43 +18,43 @@ type
     procedure wink_for_1;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure double_blink_for_10;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure close_your_eyes_for_100;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure jump_for_1000;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure combine_two_actions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure reverse_two_actions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure reversing_one_action_gives_the_same_action;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure reversing_no_actions_still_gives_no_actions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure all_possible_actions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure reverse_all_possible_actions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure do_nothing_for_zero;
   end;
 

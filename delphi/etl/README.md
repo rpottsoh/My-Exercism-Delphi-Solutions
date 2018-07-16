@@ -1,8 +1,9 @@
-# Etl
+# ETL
 
 We are going to do the `Transform` step of an Extract-Transform-Load.
 
 ### ETL
+
 Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now we need it in this shiny new system over here, so
 we're going to migrate this."
 
@@ -11,6 +12,7 @@ once." That's then typically followed by much forehead slapping and
 moaning about how stupid we could possibly be.)
 
 ### The goal
+
 We're going to extract some scrabble scores from a legacy system.
 
 The old system stored a list of letters per score:
@@ -47,7 +49,7 @@ game while being scored at 4 in the Hawaiian-language version.
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -68,6 +70,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 The Jumpstart Lab team [http://jumpstartlab.com](http://jumpstartlab.com)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

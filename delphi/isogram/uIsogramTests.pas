@@ -5,7 +5,7 @@ uses
   DUnitX.TestFramework;
 
 const
-  CanonicalVersion = '1.3.0';
+  CanonicalVersion = '1.4.0';
 
 type
 
@@ -17,35 +17,39 @@ type
     procedure empty_string;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure isogram_with_only_lower_case_characters;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure word_with_one_duplicated_character;
 
     [Test]
-//    [Ignore]
+    [Ignore]
+    procedure word_with_one_duplicated_character_from_the_end_of_the_alphabet;
+
+    [Test]
+    [Ignore]
     procedure longest_reported_english_isogram;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure word_with_duplicated_character_in_mixed_case;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure hypothetical_isogrammic_word_with_hyphen;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure isogram_with_duplicated_hyphen;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure made_up_name_that_is_an_isogram;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure duplicated_character_in_the_middle;
   end;
 	
@@ -97,6 +101,11 @@ end;
 procedure IsogramTests.word_with_one_duplicated_character;
 begin
   Assert.IsFalse(isIsogram('eleven'));
+end;
+
+procedure IsogramTests.word_with_one_duplicated_character_from_the_end_of_the_alphabet;
+begin
+  Assert.IsFalse(isIsogram('zzyzx'));
 end;
 
 initialization

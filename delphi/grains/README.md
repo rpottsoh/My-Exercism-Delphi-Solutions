@@ -1,6 +1,7 @@
 # Grains
 
-Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.
+Calculate the number of grains of wheat on a chessboard given that the number
+on each square doubles.
 
 There once was a wise servant who saved the life of a prince. The king
 promised to pay whatever the servant could dream up. Knowing that the
@@ -13,7 +14,6 @@ There are 64 squares on a chessboard.
 Write code that shows:
 - how many grains were on each square, and
 - the total number of grains
-
 
 ## For bonus points
 
@@ -29,7 +29,7 @@ experiment make the code better? Worse? Did you learn anything from it?
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -50,6 +50,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 JavaRanch Cattle Drive, exercise 6 [http://www.javaranch.com/grains.jsp](http://www.javaranch.com/grains.jsp)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

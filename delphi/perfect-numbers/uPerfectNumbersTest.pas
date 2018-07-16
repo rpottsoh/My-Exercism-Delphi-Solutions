@@ -17,51 +17,51 @@ type
     procedure Smallest_perfect_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Medium_perfect_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Large_perfect_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Smallest_abundant_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Medium_abundant_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Large_abundant_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Smallest_prime_deficient_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Smallest_non_prime_deficient_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Medium_deficient_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Large_deficient_number_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Edge_case_no_factors_other_than_itself_is_classified_correctly;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Zero_is_rejected_not_a_natural_number;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_integer_is_rejected_not_a_natural_number;
   end;
 

@@ -17,59 +17,59 @@ type
     procedure empty_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure identical_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure long_identical_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure complete_distance_in_single_nucleotide_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure complete_distance_in_small_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure small_distance_in_small_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure small_distance;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure small_distance_in_long_strands;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure non_unique_character_in_first_strand;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure non_unique_character_in_second_strand;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure same_nucleotides_in_different_positions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure large_distance;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure large_distance_in_off_by_one_strand;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure disallow_first_strand_longer;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure disallow_second_strand_longer;
   end;
 

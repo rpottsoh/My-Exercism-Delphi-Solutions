@@ -17,19 +17,19 @@ type
     procedure first_generic_verse(const startBottles: integer; const takeDown: integer);
 
     [TestCase('last generic verse','3,1')]
-//    [Ignore]
+    [Ignore]
     procedure last_generic_verse(const startBottles: integer; const takeDown: integer);
 
     [TestCase('verse with 2 bottles','2,1')]
-//    [Ignore]
+    [Ignore]
     procedure verse_with_2_bottles(const startBottles: integer; const takeDown: integer);
 
     [TestCase('verse with 1 bottle','1,1')]
-//    [Ignore]
+    [Ignore]
     procedure verse_with_1_bottle(const startBottles: integer; const takeDown: integer);
 
     [TestCase('verse with 0 bottles','0,1')]
-//    [Ignore]
+    [Ignore]
     procedure verse_with_0_bottles(const startBottles: integer; const takeDown: integer);
   end;
 
@@ -37,15 +37,15 @@ type
   MultipleVersesTests = class(TObject)
   public
     [TestCase('first two verses','99,2')]
-//    [Ignore]
+    [Ignore]
     procedure first_two_verses(const startBottles: integer; const takeDown: integer);
 
     [TestCase('last three verses','2,3')]
-//    [Ignore]
+    [Ignore]
     procedure last_three_verses(const startBottles: integer; const takeDown: integer);
 
     [TestCase('all verses','99,100')]
-//    [Ignore]
+    [Ignore]
     procedure all_verses(const startBottles: integer; const takeDown: integer);
   end;
 

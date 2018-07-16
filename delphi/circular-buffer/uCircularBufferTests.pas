@@ -17,55 +17,55 @@ type
     procedure reading_empty_buffer_should_fail;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure can_read_an_item_just_written;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Write_and_read_back_multiple_items;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure each_item_may_only_be_read_once;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure items_are_read_in_the_order_they_are_written;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure full_buffer_cannot_be_written_to;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure a_read_frees_up_capacity_for_another_write;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure read_position_is_maintained_even_across_multiple_writes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure items_cleared_out_of_buffer_cannot_be_read;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure clear_frees_up_capacity_for_another_write;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure clear_does_nothing_on_empty_buffer;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure overwrite_acts_like_write_on_non_full_buffer;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure overwrite_replaces_the_oldest_item_on_full_buffer;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure overwrite_replaces_the_oldest_item_remaining_in_buffer_following_a_read;
   end;
 

@@ -16,43 +16,43 @@ type
     procedure Test_square_1;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Test_square_2;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Test_square_3;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Test_square_4;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Test_square_16;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Test_square_32;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Test_square_64;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Square_0_raises_an_exception;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_square_raises_an_exception;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Square_greater_than_64_raises_an_exception;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Returns_the_total_number_of_grains_on_the_board;
   end;
 

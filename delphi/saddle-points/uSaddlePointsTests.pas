@@ -26,19 +26,19 @@ type
     procedure Can_identify_single_saddle_point;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Can_identify_that_empty_matrix_has_no_saddle_points;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Can_identify_lack_of_saddle_points_when_there_are_none;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Can_identify_multiple_saddle_points;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Can_identify_saddle_point_in_bottom_right_corner;
   end;
 

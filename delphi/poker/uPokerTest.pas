@@ -17,111 +17,111 @@ type
     procedure Single_hand_always_wins;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Highest_card_out_of_all_hands_wins;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure A_tie_has_multiple_winners;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Multiple_hands_with_the_same_high_cards_tie_compares_next_highest_ranked_down_to_last_card;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure One_pair_beats_high_card;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Highest_pair_wins;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Two_pairs_beats_one_pair;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_two_pairs_highest_ranked_pair_wins;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_two_pairs_with_the_same_highest_ranked_pair_tie_goes_to_low_pair;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_two_identically_ranked_pairs_tie_goes_to_remaining_card_kicker;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Three_of_a_kind_beats_two_pair;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_three_of_a_kind_tie_goes_to_highest_ranked_triplet;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure With_multiple_decks_two_players_can_have_same_three_of_a_kind_ties_go_to_highest_remaining_cards;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure A_straight_beats_three_of_a_kind;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Aces_can_end_a_straight_10_J_Q_K_A;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Aces_can_start_a_straight_A_2_3_4_5;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_with_a_straight_tie_goes_to_highest_ranked_card;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Even_though_an_ace_is_usually_high_a_5_high_straight_is_the_lowest_scoring_straight;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Flush_beats_a_straight;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_a_flush_tie_goes_to_high_card_down_to_the_last_one_if_necessary;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Full_house_beats_a_flush;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_a_full_house_tie_goes_to_highest_ranked_triplet;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure With_multiple_decks_both_hands_have_a_full_house_with_the_same_triplet_tie_goes_to_the_pair;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Four_of_a_kind_beats_a_full_house;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_four_of_a_kind_tie_goes_to_high_quad;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure With_multiple_decks_both_hands_with_identical_four_of_a_kind_tie_determined_by_kicker;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Straight_flush_beats_four_of_a_kind;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Both_hands_have_straight_flush_tie_goes_to_highest_ranked_card;
   end;
 

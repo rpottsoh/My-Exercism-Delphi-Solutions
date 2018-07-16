@@ -14,24 +14,24 @@ type
     procedure Returns_empty_balance_after_opening;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Check_basic_balance;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Balance_can_increment_and_decrement;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Closed_account_throws_exception_when_checking_balance;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Change_account_balance_from_multiple_threads;
   end;
 
 implementation
-uses System.Classes, System.SyncObjs, uBankAccount;
+uses System.SysUtils, System.Classes, System.SyncObjs, uBankAccount;
 
 const HalfCentTolerance = 0.005;
 
@@ -118,20 +118,22 @@ begin
       procedure
       var j: integer;
       begin
-        for j := 1 to iterations do
-        begin
-          account.UpdateBalance(1);
-          account.UpdateBalance(-1);
+        try
+          for j := 1 to iterations do
+          begin
+            account.UpdateBalance(1);
+            account.UpdateBalance(-1);
+          end;
+        finally
+          dec(activeThreadCount);
+          if activeThreadCount <= 0 then
+            allthreadsDone.SetEvent;
         end;
-
-        dec(activeThreadCount);
-        if activeThreadCount <= 0 then
-          allthreadsDone.SetEvent;
       end)
       .Start;
   end;
 
-  assert.AreEqual(wrSignaled,allthreadsDone.WaitFor(60000));
+  assert.AreEqual(wrSignaled,allthreadsDone.WaitFor(60000), format('%d threads still active',[activeThreadCount]));
   assert.AreEqual(0, account.Balance, HalfCentTolerance);
 end;
 

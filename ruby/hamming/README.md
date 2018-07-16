@@ -1,6 +1,6 @@
 # Hamming
 
-Write a program that can calculate the Hamming difference between two DNA strands.
+Calculate the Hamming difference between two DNA strands.
 
 A mutation is simply a mistake that occurs during the creation or
 copying of a nucleic acid, in particular DNA. Because nucleic acids are
@@ -49,21 +49,18 @@ If you would like color output, you can `require 'minitest/pride'` in
 the test file, or note the alternative instruction, below, for running
 the test file.
 
-In order to run the test, you can run the test file from the exercise
-directory. For example, if the test suite is called
-`hello_world_test.rb`, you can run the following command:
+Run the tests from the exercise directory using the following command:
 
-    ruby hello_world_test.rb
+    ruby hamming_test.rb
 
 To include color from the command line:
 
-    ruby -rminitest/pride hello_world_test.rb
+    ruby -r minitest/pride hamming_test.rb
 
-The test files may have the execution bit set so you may also be able to
-run it like this:
-
-    ./hello_world_test.rb
 
 ## Source
 
 The Calculating Point Mutations problem at Rosalind [http://rosalind.info/problems/hamm/](http://rosalind.info/problems/hamm/)
+
+## Submitting Incomplete Solutions
+It's possible to submit an incomplete solution so you can see how others have completed the exercise.

@@ -1,14 +1,10 @@
-#!/usr/bin/env ruby
-gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
-require 'minitest/pride'
 require_relative 'leap'
 
-# Test data version:
-# 9b8b80c
+# Common test data version: 1.1.0 7f4d0d8
 class Date
   def leap?
-    throw "Implement this yourself instead of using Ruby's implementation."
+    raise RuntimeError, "Implement this yourself instead of using Ruby's implementation."
   end
 
   alias gregorian_leap? leap?
@@ -16,37 +12,23 @@ class Date
 end
 
 class YearTest < Minitest::Test
-  def test_leap_year
-    assert Year.leap?(1996), "Expected 'true', 1996 is a leap year."
+  def test_year_not_divisible_by_4_common_year
+    # skip
+    refute Year.leap?(2015), "Expected 'false', 2015 is not a leap year."
   end
 
-  def test_standard_and_odd_year
-    #skip
-    refute Year.leap?(1997), "Expected 'false', 1997 is not a leap year."
+  def test_year_divisible_by_4_not_divisible_by_100_leap_year
+    skip
+    assert Year.leap?(2020), "Expected 'true', 2020 is a leap year."
   end
 
-  def test_standard_even_year
-    #skip
-    refute Year.leap?(1998), "Expected 'false', 1998 is not a leap year."
+  def test_year_divisible_by_100_not_divisible_by_400_common_year
+    skip
+    refute Year.leap?(2100), "Expected 'false', 2100 is not a leap year."
   end
 
-  def test_standard_nineteenth_century
-    #skip
-    refute Year.leap?(1900), "Expected 'false', 1900 is not a leap year."
-  end
-
-  def test_standard_eighteenth_century
-    #skip
-    refute Year.leap?(1800), "Expected 'false', 1800 is not a leap year."
-  end
-
-  def test_leap_twenty_fourth_century
-    #skip
-    assert Year.leap?(2400), "Expected 'true', 2400 is a leap year."
-  end
-
-  def test_leap_y2k
-    #skip
+  def test_year_divisible_by_400_leap_year
+    skip
     assert Year.leap?(2000), "Expected 'true', 2000 is a leap year."
   end
 
@@ -68,7 +50,7 @@ class YearTest < Minitest::Test
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
   def test_bookkeeping
-    #skip
-    assert_equal 2, BookKeeping::VERSION
+    skip
+    assert_equal 3, BookKeeping::VERSION
   end
 end

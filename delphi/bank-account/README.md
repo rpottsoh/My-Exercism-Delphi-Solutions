@@ -1,6 +1,7 @@
 # Bank Account
 
-Simulate a bank account supporting opening/closing, withdraws, and deposits of money. Watch out for concurrent transactions!
+Simulate a bank account supporting opening/closing, withdrawals, and deposits
+of money. Watch out for concurrent transactions!
 
 A bank account can be accessed in multiple ways. Clients can make
 deposits and withdrawals using the internet, mobile phones, etc. Shops
@@ -28,7 +29,7 @@ Have fun!
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -45,8 +46,5 @@ Note that, when trying to submit an exercise, make sure the exercise file you're
 
 For example, if you're submitting `ubob.pas` for the Bob exercise, the submit command would be something like `exercism submit <path_to_exercism_dir>/delphi/bob/ubob.pas`.
 
-
-
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

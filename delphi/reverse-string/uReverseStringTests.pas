@@ -17,19 +17,19 @@ type
     procedure an_empty_string;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure a_word;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure a_capitalized_word;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure a_sentence_with_punctuation;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure a_palindrome;
   end;
 

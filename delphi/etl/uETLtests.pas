@@ -22,15 +22,15 @@ type
     procedure A_single_letter;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Single_score_with_multiple_letters;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Multiple_scores_with_multiple_letters;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Multiple_scores_with_differing_numbers_of_letters;
   end;
 

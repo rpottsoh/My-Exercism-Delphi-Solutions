@@ -19,23 +19,23 @@ type
     procedure zero_pieces;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure one_piece;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure two_pieces;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure three_pieces;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure full_proverb;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure four_pieces_modernized;
   end;
 

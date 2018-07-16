@@ -20,19 +20,19 @@ type
     procedure empty_strand;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure can_count_one_nucleotide_in_single_character_input;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure strand_with_repeated_nucleotide;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure strand_with_multiple_nucleotides;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure strand_with_invalid_nucleotides;
   end;
 

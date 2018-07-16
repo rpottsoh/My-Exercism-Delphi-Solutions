@@ -16,59 +16,59 @@ type
     procedure paired_square_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure empty_string;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure unpaired_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure wrong_ordered_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure wrong_closing_bracket;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure paired_with_whitespace;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure partially_paired_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure simple_nested_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure several_paired_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure paired_and_nested_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure unopened_closing_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure unpaired_and_nested_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure paired_and_wrong_nested_brackets;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure math_expression;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure complex_latex_expression;
   end;
 

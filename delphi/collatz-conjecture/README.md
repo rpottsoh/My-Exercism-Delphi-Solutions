@@ -10,6 +10,7 @@ always reach 1 eventually.
 Given a number n, return the number of steps required to reach 1.
 
 ## Examples
+
 Starting with n = 12, the steps would be as follows:
 
 0. 12
@@ -25,11 +26,10 @@ Starting with n = 12, the steps would be as follows:
 
 Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
-
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 

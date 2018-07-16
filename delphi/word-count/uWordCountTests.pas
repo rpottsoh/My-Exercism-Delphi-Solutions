@@ -22,43 +22,43 @@ type
     procedure Count_one_word;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Count_one_of_each_word;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Multiple_occurrences_of_a_word;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Handles_cramped_lists;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Handles_expanded_lists;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Ignore_punctuation;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Include_numbers;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Normalize_case;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure With_apostrophes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure With_quotations;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Multiple_spaces_not_detected_as_a_word;
 
   end;

@@ -17,95 +17,95 @@ type
     procedure Stating_something;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Shouting;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Asking_a_question;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Asking_a_numeric_question;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Asking_gibberish;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Talking_forcefully;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Using_acronyms_in_regular_speech;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Forceful_questions;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Shouting_numbers;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Only_numbers;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Question_with_only_numbers;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Shouting_with_special_characters;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Shouting_with_no_exclamation_mark;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Statement_containing_question_mark;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure non_letters_with_question;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Prattling_on;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Silence;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Prolonged_silence;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Alternate_silence;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Multiple_line_question;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Starting_with_whitespace;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Ending_with_whitespace;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Other_whitespace;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Non_question_ending_with_whitespace;
   end;
 

@@ -19,47 +19,47 @@ type
     procedure No_rows;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure No_columns;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure No_mines;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Board_with_only_mines;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Mine_surrounded_by_spaces;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Space_surrounded_by_mines;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Horizontal_line;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Horizontal_line_mines_at_edges;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Vertical_line;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Vertical_line_mines_at_edges;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Cross;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Large_board;
   end;
 

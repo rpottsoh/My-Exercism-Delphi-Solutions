@@ -31,14 +31,15 @@ The Hamming distance between these two DNA strands is 7.
 
 # Implementation notes
 
-The Hamming distance is only defined for sequences of equal length. This means
-that based on the definition, each language could deal with getting sequences
-of equal length differently.
+The Hamming distance is only defined for sequences of equal length, so
+an attempt to calculate it between sequences of different lengths should
+not work. The general handling of this situation (e.g., raising an
+exception vs returning a special value) may differ between languages.
 
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -59,6 +60,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 The Calculating Point Mutations problem at Rosalind [http://rosalind.info/problems/hamm/](http://rosalind.info/problems/hamm/)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

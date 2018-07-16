@@ -14,67 +14,67 @@ type
 //    [Ignore('Comment the "[Ignore]" statement to run the test')]
     procedure Word_beginning_with_a;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_e;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_i;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_o;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_u;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_a_vowel_and_followed_by_a_qu;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_p;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_k;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_x;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_q_without_a_following_u;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_ch;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_qu;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_qu_and_a_preceding_consonant;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_th;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_thr;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_sch;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_yt;
 
-//    [Ignore]
+    [Ignore]
     procedure Word_beginning_with_xr;
 
-//    [Ignore]
+    [Ignore]
     procedure y_is_treated_like_a_consonant_at_the_beginning_of_a_word;
 
-//    [Ignore]
+    [Ignore]
     procedure y_is_treated_like_a_vowel_at_the_end_of_a_consonant_cluster;
 
-//    [Ignore]
+    [Ignore]
     procedure y_as_second_letter_in_two_letter_word;
 
-//    [Ignore]
+    [Ignore]
     procedure A_whole_phrase;
   end;
 

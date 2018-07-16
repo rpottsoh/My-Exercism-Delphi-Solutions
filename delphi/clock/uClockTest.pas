@@ -4,6 +4,9 @@ interface
 uses
   DUnitX.TestFramework;
 
+const
+  CanonicalVersion = '2.2.1';
+
 type
 
   [TestFixture('Create a new clock with an initial time')]
@@ -14,71 +17,75 @@ type
     procedure On_the_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Past_the_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Midnight_is_zero_hours;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Hour_rolls_over;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Hour_rolls_over_continuously;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Sixty_minutes_is_next_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Minutes_roll_over;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Minutes_roll_over_continuously;
 
     [Test]
-//    [Ignore]
-    procedure Hour_and_minute_roll_over;
+    [Ignore]
+    procedure Hour_and_minutes_roll_over;
 
     [Test]
-//    [Ignore]
-    procedure Hour_and_minute_roll_over_continuously;
+    [Ignore]
+    procedure Hour_and_minutes_roll_over_continuously;
 
     [Test]
-//    [Ignore]
-    procedure Hour_and_minute_roll_over_to_exactly_midnight;
+    [Ignore]
+    procedure Hour_and_minutes_roll_over_to_exactly_midnight;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_hour_rolls_over;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_hour_rolls_over_continuously;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_minutes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_minutes_roll_over;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Negative_minutes_roll_over_continuously;
 
     [Test]
-//    [Ignore]
+    [Ignore]
+    procedure Negative_hour_and_minutes_both_roll_over;
+
+    [Test]
+    [Ignore]
     procedure Negative_hour_and_minutes_both_roll_over_continuously;
   end;
 
@@ -86,35 +93,35 @@ type
   TAddMinutes = class(TObject)
   public
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_minutes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_no_minutes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_to_next_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_more_than_one_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_more_than_two_hours_with_carry;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_across_midnight;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_more_than_one_day; //1500 min = 25 hrs
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Add_more_than_two_days;
   end;
 
@@ -122,39 +129,35 @@ type
   TSubtractMinutes = class(TObject)
   public
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_minutes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_to_previous_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_more_than_one_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_across_midnight;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_more_than_two_hours;
 
     [Test]
-//    [Ignore]
-    procedure Midnight_is_zero_hundred_hours;
-
-    [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_more_than_two_hours_with_borrow;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_more_than_one_day; //(1500 min = 25 hrs)
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Subtract_more_than_two_days;
   end;
 
@@ -162,63 +165,63 @@ type
   TCompareClocks = class(TObject)
   public
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_same_time;
 
     [Test]
-//    [Ignore]
-    procedure Clocks_a_minutes_apart;
+    [Ignore]
+    procedure Clocks_a_minute_apart;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_an_hour_apart;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_hour_overflow;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_hour_overflow_by_several_days;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_hour;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_hour_that_wraps;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_hour_that_wraps_multiple_times;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_minute_overflow;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_minute_overflow_by_serveral_days;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_minute;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_minute_that_wraps;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_minute_that_wraps_multiple_times;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_hours_and_minutes;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Clocks_with_negative_hours_and_minutes_that_wrap;
   end;
 
@@ -266,17 +269,17 @@ begin
   Assert.AreEqual('04:43', Clock.SetHands(0, 1723).ToString);
 end;
 
-procedure TClockTest.Hour_and_minute_roll_over;
+procedure TClockTest.Hour_and_minutes_roll_over;
 begin
   Assert.AreEqual('03:40', Clock.SetHands(25, 160).ToString);
 end;
 
-procedure TClockTest.Hour_and_minute_roll_over_continuously;
+procedure TClockTest.Hour_and_minutes_roll_over_continuously;
 begin
   Assert.AreEqual('11:01', Clock.SetHands(201, 3001).ToString);
 end;
 
-procedure TClockTest.Hour_and_minute_roll_over_to_exactly_midnight;
+procedure TClockTest.Hour_and_minutes_roll_over_to_exactly_midnight;
 begin
   Assert.AreEqual('00:00', Clock.SetHands(72, 8640).ToString);
 end;
@@ -309,6 +312,11 @@ end;
 procedure TClockTest.Negative_minutes_roll_over_continuously;
 begin
   Assert.AreEqual('16:40', Clock.SetHands(1, -4820).ToString);
+end;
+
+procedure TClockTest.Negative_hour_and_minutes_both_roll_over;
+begin
+  Assert.AreEqual('20:20', Clock.SetHands(-25, -160).ToString);
 end;
 
 procedure TClockTest.Negative_hour_and_minutes_both_roll_over_continuously;
@@ -362,47 +370,42 @@ end;
 {$region 'TSubtractMinutes'}
 procedure TSubtractMinutes.Subtract_minutes;
 begin
-  Assert.AreEqual('10:00', Clock.SetHands(10, 3).Add(-3).ToString);
+  Assert.AreEqual('10:00', Clock.SetHands(10, 3).Subtract(3).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_to_previous_hour;
 begin
-  Assert.AreEqual('09:33', Clock.SetHands(10, 3).Add(-30).ToString);
+  Assert.AreEqual('09:33', Clock.SetHands(10, 3).Subtract(30).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_more_than_one_hour;
 begin
-  Assert.AreEqual('08:53', Clock.SetHands(10, 3).Add(-70).ToString);
+  Assert.AreEqual('08:53', Clock.SetHands(10, 3).Subtract(70).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_across_midnight;
 begin
-  Assert.AreEqual('23:59', Clock.SetHands(0, 3).Add(-4).ToString);
+  Assert.AreEqual('23:59', Clock.SetHands(0, 3).Subtract(4).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_more_than_two_hours;
 begin
-  Assert.AreEqual('21:20', Clock.SetHands(0, 0).Add(-160).ToString);
-end;
-
-procedure TSubtractMinutes.Midnight_is_zero_hundred_hours;
-begin
-  Assert.AreEqual('00:00', Clock.SetHands(24).ToString);
+  Assert.AreEqual('21:20', Clock.SetHands(0, 0).Subtract(160).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_more_than_two_hours_with_borrow;
 begin
-  Assert.AreEqual('03:35', Clock.SetHands(6, 15).Add(-160).ToString);
+  Assert.AreEqual('03:35', Clock.SetHands(6, 15).Subtract(160).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_more_than_one_day;
 begin
-  Assert.AreEqual('04:32', Clock.SetHands(5, 32).Add(-1500).ToString);
+  Assert.AreEqual('04:32', Clock.SetHands(5, 32).Subtract(1500).ToString);
 end;
 
 procedure TSubtractMinutes.Subtract_more_than_two_days;
 begin
-  Assert.AreEqual('00:20', Clock.SetHands(2, 20).Add(-3000).ToString);
+  Assert.AreEqual('00:20', Clock.SetHands(2, 20).Subtract(3000).ToString);
 end;
 {$endregion}
 
@@ -416,7 +419,7 @@ begin
   Assert.IsTrue(Clock1.Equal(Clock2));
 end;
 
-procedure TCompareClocks.Clocks_a_minutes_apart;
+procedure TCompareClocks.Clocks_a_minute_apart;
 var Clock1, Clock2: Clock;
 begin
   Clock1 := Clock.SetHands(15, 36);

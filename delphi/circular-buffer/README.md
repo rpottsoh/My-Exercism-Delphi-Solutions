@@ -1,7 +1,5 @@
 # Circular Buffer
 
-A data structure that uses a single, fixed-size buffer as if it were connected end-to-end.
-
 A circular buffer, cyclic buffer or ring buffer is a data structure that
 uses a single, fixed-size buffer as if it were connected end-to-end.
 
@@ -33,22 +31,29 @@ If the buffer has 7 elements then it is completely full:
 When the buffer is full an error will be raised, alerting the client
 that further writes are blocked until a slot becomes free.
 
-The client can opt to overwrite the oldest data with a forced write. In
-this case, two more elements — A & B — are added and they overwrite the
-3 & 4:
+When the buffer is full, the client can opt to overwrite the oldest
+data with a forced write. In this case, two more elements — A & B —
+are added and they overwrite the 3 & 4:
 
     [6][7][8][9][A][B][5]
 
-Finally, if two elements are now removed then what would be returned is
-not 3 & 4 but 5 & 6 because A & B overwrote the 3 & the 4 yielding the
-buffer with:
+3 & 4 have been replaced by A & B making 5 now the oldest data in the
+buffer. Finally, if two elements are removed then what would be
+returned is 5 & 6 yielding the buffer:
 
     [ ][7][8][9][A][B][ ]
+
+Because there is space available, if the client again uses overwrite
+to store C & D then the space where 5 & 6 were stored previously will
+be used not the location of 7 & 8. 7 is still the oldest element and
+the buffer is once again full.
+
+    [D][7][8][9][A][B][C]
 
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -69,6 +74,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 Wikipedia [http://en.wikipedia.org/wiki/Circular_buffer](http://en.wikipedia.org/wiki/Circular_buffer)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

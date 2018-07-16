@@ -17,39 +17,39 @@ type
     procedure Finds_a_value_in_an_array_with_one_element;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Finds_a_value_in_the_middle_of_an_array;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Finds_a_value_at_the_beginning_of_an_array;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Finds_a_value_at_the_end_of_an_array;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Finds_a_value_in_an_array_of_odd_length;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Finds_a_value_in_an_array_of_even_length;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Identifies_that_a_value_is_not_included_in_the_array;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure A_value_smaller_than_the_arrays_smallest_value_is_not_included;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure A_value_larger_than_the_arrays_largest_value_is_not_included;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Nothing_is_included_in_an_empty_array;
   end;
 

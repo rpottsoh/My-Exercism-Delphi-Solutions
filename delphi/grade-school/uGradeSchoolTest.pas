@@ -27,28 +27,28 @@ type
     procedure Adding_a_student_adds_them_to_the_sorted_roster;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Adding_more_student_adds_them_to_the_sorted_roster;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Adding_students_to_different_grades_adds_them_to_the_same_sorted_roster;
 
     [Test]
-//    [Ignore]
-    procedure Grade_returns_the_students_in_that_grade_in_alphabetical_order;
-
-    [Test]
-//    [Ignore]
-    procedure Grade_returns_an_empty_list_if_there_are_no_students_in_that_grade;
-
-    [Test]
-//    [Ignore]
+    [Ignore]
     procedure Roster_returns_an_empty_list_if_there_are_no_students_enrolled;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Student_names_with_grades_are_displayed_in_the_same_sorted_roster;
+
+    [Test]
+    [Ignore]
+    procedure Grade_returns_the_students_in_that_grade_in_alphabetical_order;
+
+    [Test]
+    [Ignore]
+    procedure Grade_returns_an_empty_list_if_there_are_no_students_in_that_grade;
   end;
 
 implementation

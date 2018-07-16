@@ -43,11 +43,11 @@ type
     procedure No_name_given;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure A_name_given;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure Another_name_given;
   end;
 

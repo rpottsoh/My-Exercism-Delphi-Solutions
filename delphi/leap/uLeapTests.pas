@@ -17,15 +17,15 @@ type
     procedure year_not_divisible_by_4_common_year;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure year_divisible_by_4_not_divisible_by_100_leap_year;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure year_divisible_by_100_not_divisible_by_400_common_year;
 
     [Test]
-//    [Ignore]
+    [Ignore]
     procedure year_divisible_by_400_leap_year;
   end;
 

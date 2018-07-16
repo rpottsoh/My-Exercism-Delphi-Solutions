@@ -16,23 +16,23 @@ type
     procedure Zero_steps_for_one(const aNumber: integer; const aExpected: integer);
 
     [Testcase('Divide if even','16, 4')]
-//    [Ignore]
+    [Ignore]
     procedure Divide_if_even(const aNumber: integer; const aExpected: integer);
 
     [Testcase('Even and odd steps','12, 9')]
-//    [Ignore]
+    [Ignore]
     procedure Even_and_odd_steps(const aNumber: integer; const aExpected: integer);
 
     [Testcase('Large number of even and odd steps', '1000000, 152')]
-//    [Ignore]
+    [Ignore]
     procedure Large_number_of_even_and_odd_steps(const aNumber: integer; const aExpected: integer);
 
     [Testcase('Zero is an error', '0,error: Only positive numbers are allowed')]
-//    [Ignore]
+    [Ignore]
     procedure Zero_is_an_error(const aNumber: integer; const aExpected: string);
 
     [Testcase('Negative value is an error', '-15,error: Only positive numbers are allowed')]
-//    [Ignore]
+    [Ignore]
     procedure Negative_value_is_an_error(const aNumber: integer; const aExpected: string);
   end;
 

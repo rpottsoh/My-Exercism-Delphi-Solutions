@@ -2,15 +2,13 @@
 
 Pick the best hand(s) from a list of poker hands.
 
-Write an algorithm to pick the best poker hand(s) from a list.
-
 See [wikipedia](https://en.wikipedia.org/wiki/List_of_poker_hands) for an
 overview of poker hands.
 
 ## Testing
 
 In order to run the tests for this track, you will need to install
-DUnitX. Please see [installation](http://www.exercism.io/languages/delphi/installing) instructions for more information.
+DUnitX. Please see the [installation](http://www.exercism.io/languages/delphi/installation) instructions for more information.
 
 ### Loading Exercises into Delphi
 
@@ -31,6 +29,5 @@ For example, if you're submitting `ubob.pas` for the Bob exercise, the submit co
 
 Inspired by the training course from Udacity. [https://www.udacity.com/course/viewer#!/c-cs212/](https://www.udacity.com/course/viewer#!/c-cs212/)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-
