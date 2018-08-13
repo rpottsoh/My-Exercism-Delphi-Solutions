@@ -5,7 +5,7 @@ uses
   DUnitX.TestFramework;
 
 const
-  CanonicalVersion = '1.1.0';
+  CanonicalVersion = '1.3.0';
 
 type
 
@@ -13,99 +13,103 @@ type
   BobTests = class(TObject)
   public
     [Test]
-//  [Ignore('Comment the "[Ignore]" statement to run the test')]
+//    [Ignore('Comment the "[Ignore]" statement to run the test')]
     procedure Stating_something;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Shouting;
 
     [Test]
-    [Ignore]
+//    [Ignore]
+    procedure Shouting_gibberish;
+
+    [Test]
+//    [Ignore]
     procedure Asking_a_question;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Asking_a_numeric_question;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Asking_gibberish;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Talking_forcefully;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Using_acronyms_in_regular_speech;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Forceful_questions;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Shouting_numbers;
 
     [Test]
-    [Ignore]
-    procedure Only_numbers;
+//    [Ignore]
+    procedure No_letters;
 
     [Test]
-    [Ignore]
-    procedure Question_with_only_numbers;
+//    [Ignore]
+    procedure Question_with_no_letters;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Shouting_with_special_characters;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Shouting_with_no_exclamation_mark;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Statement_containing_question_mark;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure non_letters_with_question;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Prattling_on;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Silence;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Prolonged_silence;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Alternate_silence;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Multiple_line_question;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Starting_with_whitespace;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Ending_with_whitespace;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Other_whitespace;
 
     [Test]
-    [Ignore]
+//    [Ignore]
     procedure Non_question_ending_with_whitespace;
   end;
 
@@ -162,12 +166,17 @@ begin
   Assert.AreEqual('Calm down, I know what I''m doing!', TBob.Response('WHAT THE HELL WERE YOU THINKING?'));
 end;
 
+procedure BobTests.Shouting_gibberish;
+begin
+  Assert.AreEqual('Whoa, chill out!', TBob.Response('FCECDFCAAB'));
+end;
+
 procedure BobTests.Shouting_numbers;
 begin
   Assert.AreEqual('Whoa, chill out!', TBob.Response('1, 2, 3 GO!'));
 end;
 
-procedure BobTests.Only_numbers;
+procedure BobTests.No_letters;
 begin
   Assert.AreEqual('Whatever.', TBob.Response('1, 2, 3'));
 end;
@@ -177,7 +186,7 @@ begin
   Assert.AreEqual('Fine. Be that way!', TBob.Response(#13#10 + ' ' + #9));
 end;
 
-procedure BobTests.Question_with_only_numbers;
+procedure BobTests.Question_with_no_letters;
 begin
   Assert.AreEqual('Sure.', TBob.Response('4?'));
 end;
@@ -189,7 +198,7 @@ end;
 
 procedure BobTests.Shouting_with_no_exclamation_mark;
 begin
-  Assert.AreEqual('Whoa, chill out!', TBob.Response('I HATE YOU'));
+  Assert.AreEqual('Whoa, chill out!', TBob.Response('I HATE THE DMV'));
 end;
 
 procedure BobTests.Starting_with_whitespace;
