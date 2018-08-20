@@ -15,26 +15,24 @@ implementation
 class function BinarySearch.SearchHelper(input: TArray<Integer>; target: Integer; minIndex: Integer; maxIndex: Integer): integer;
 var middleIndex: integer;
 begin
-  middleIndex := (minIndex + maxIndex) div 2;
-
-  if (input[middleIndex] = target) then
-    result := middleIndex
+  if minIndex > maxIndex then
+    result := -1
   else
-    if (middleIndex <= Low(input)) or (middleIndex >= High(input)) or (minIndex = maxIndex) then
-      result := -1
+  begin
+    middleIndex := (minIndex + maxIndex) div 2;
+    if (input[middleIndex] = target) then
+      result := middleIndex
     else
       if input[middleIndex] > target then
         result := SearchHelper(input, target, minIndex, middleIndex - 1)
       else
         result := SearchHelper(input, target, middleIndex + 1, maxIndex);
+  end;
 end;
 
 class function BinarySearch.Search(input: TArray<Integer>; target: integer): integer;
 begin
-  if length(input) = 0 then
-    result := -1
-  else
-    result := SearchHelper(input, target, Low(input), High(input));
+  result := SearchHelper(input, target, Low(input), High(input));
 end;
 
 end.
