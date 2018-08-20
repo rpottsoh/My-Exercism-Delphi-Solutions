@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\binary-search\BinarySearch.exe" total="10" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-03-05" time="0.002">
+<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\binary-search\BinarySearch.exe" total="10" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-08-19" time="0.003">
   <culture-info current-culture="en" current-uiculture="en" />
-  <test-suite type="Assembly" name="BinarySearch.exe" executed="true" result="Success" success="True" time="0.002" asserts="0">
+  <test-suite type="Assembly" name="BinarySearch.exe" executed="true" result="Success" success="True" time="0.003" asserts="0">
     <results>
         <test-suite type="Namespace" name="uBinarySearchTest" executed="true" result="Success" success="True" time="0.002" asserts="0" >
           <results>
