@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\bob\Bob.exe" total="25" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-08-13" time="0.003">
+<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\bob\Bob.exe" total="25" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2018-11-17" time="0.006">
   <culture-info current-culture="en" current-uiculture="en" />
-  <test-suite type="Assembly" name="Bob.exe" executed="true" result="Success" success="True" time="0.003" asserts="0">
+  <test-suite type="Assembly" name="Bob.exe" executed="true" result="Success" success="True" time="0.006" asserts="0">
     <results>
-        <test-suite type="Namespace" name="uBobTests" executed="true" result="Success" success="True" time="0.003" asserts="0" >
+        <test-suite type="Namespace" name="uBobTests" executed="true" result="Success" success="True" time="0.005" asserts="0" >
           <results>
-              <test-suite type="Fixture" name="BobTests" executed="True" result="Success" success="True" time="0.003" >
+              <test-suite type="Fixture" name="BobTests" executed="True" result="Success" success="True" time="0.005" >
                 <results>
-                  <test-case name="Stating_something" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                  <test-case name="Shouting" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Stating_something" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Shouting" executed="True" result="Success" success="True" time="0.001" asserts="0" />
                   <test-case name="Shouting_gibberish" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Asking_a_question" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                   <test-case name="Asking_a_numeric_question" executed="True" result="Success" success="True" time="0.000" asserts="0" />
