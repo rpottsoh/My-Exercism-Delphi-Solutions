@@ -5,7 +5,7 @@ uses
   DUnitX.TestFramework;
 
 const
-  CanonicalVersion = '1.3.0';
+  CanonicalVersion = '1.5.0';
 
 type
   [TestFixture]
@@ -16,59 +16,67 @@ type
     procedure paired_square_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure empty_string;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure unpaired_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure wrong_ordered_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure wrong_closing_bracket;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure paired_with_whitespace;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure partially_paired_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure simple_nested_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure several_paired_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure paired_and_nested_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure unopened_closing_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure unpaired_and_nested_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure paired_and_wrong_nested_brackets;
 
     [Test]
-    [Ignore]
+    //[Ignore]
+    procedure paired_and_incomplete_brackets;
+
+    [Test]
+    //[Ignore]
+    procedure too_many_closing_brackets;
+
+    [Test]
+    //[Ignore]
     procedure math_expression;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure complex_latex_expression;
   end;
 
@@ -91,6 +99,11 @@ end;
 procedure BracketPushTest.math_expression;
 begin
   Assert.IsTrue(TBracketPush.IsPaired('(((185 + 223.85) * 15) - 543)/2'));
+end;
+
+procedure BracketPushTest.paired_and_incomplete_brackets;
+begin
+  Assert.IsFalse(TBracketPush.IsPaired('{}['));
 end;
 
 procedure BracketPushTest.paired_and_nested_brackets;
@@ -126,6 +139,11 @@ end;
 procedure BracketPushTest.simple_nested_brackets;
 begin
   Assert.IsTrue(TBracketPush.IsPaired('{[]}'));
+end;
+
+procedure BracketPushTest.too_many_closing_brackets;
+begin
+  Assert.IsFalse(TBracketPush.IsPaired('[]]'));
 end;
 
 procedure BracketPushTest.unopened_closing_brackets;

@@ -18,12 +18,10 @@ uses SysUtils;
 { BracketPush }
 
 class function TBracketPush.IsPaired(aInput: string): boolean;
-var
-  aChar: char;
 begin
   fBrackets := '';
-  for aChar in aInput do
-    if aChar in ['[',']','{','}','(',')'] then
+  for var aChar in aInput do
+    if CharInSet(aChar, ['[',']','{','}','(',')']) then
       fBrackets := fBrackets + aChar;
   fPreviousLength := length(fBrackets);
 
