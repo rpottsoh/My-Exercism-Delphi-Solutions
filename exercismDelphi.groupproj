@@ -117,6 +117,12 @@
         <Projects Include="delphi\difference-of-squares\DifferenceOfSquares.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="delphi\high-scores\HighScores.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="delphi\resistor-color\ResistorColor.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -467,14 +473,32 @@
     <Target Name="DifferenceOfSquares:Make">
         <MSBuild Projects="delphi\difference-of-squares\DifferenceOfSquares.dproj" Targets="Make"/>
     </Target>
+    <Target Name="HighScores">
+        <MSBuild Projects="delphi\high-scores\HighScores.dproj"/>
+    </Target>
+    <Target Name="HighScores:Clean">
+        <MSBuild Projects="delphi\high-scores\HighScores.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HighScores:Make">
+        <MSBuild Projects="delphi\high-scores\HighScores.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ResistorColor">
+        <MSBuild Projects="delphi\resistor-color\ResistorColor.dproj"/>
+    </Target>
+    <Target Name="ResistorColor:Clean">
+        <MSBuild Projects="delphi\resistor-color\ResistorColor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResistorColor:Make">
+        <MSBuild Projects="delphi\resistor-color\ResistorColor.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Allergies;BankAccount;BeerSong;BinarySearch;Bob;BookStore;Bowling;CircularBuffer;Clock;Collatzconjecture;ETL;Grains;Hamming;HelloWorld;ISBNVerifier;Leap;MineSweeper;NucleotideCount;PerfectNumbers;PhoneNumber;PigLatin;Poker;raindrops;ReverseString;RnaTranscription;RomanNumerals;SaddlePoints;Triangle;twofer;Wordy;SecretHandshake;ArmstrongNumbers;SpaceAge;Proverb;GradeSchool;WordCount;Isogram;DifferenceOfSquares"/>
+        <CallTarget Targets="Allergies;BankAccount;BeerSong;BinarySearch;Bob;BookStore;Bowling;CircularBuffer;Clock;Collatzconjecture;ETL;Grains;Hamming;HelloWorld;ISBNVerifier;Leap;MineSweeper;NucleotideCount;PerfectNumbers;PhoneNumber;PigLatin;Poker;raindrops;ReverseString;RnaTranscription;RomanNumerals;SaddlePoints;Triangle;twofer;Wordy;SecretHandshake;ArmstrongNumbers;SpaceAge;Proverb;GradeSchool;WordCount;Isogram;DifferenceOfSquares;HighScores;ResistorColor"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Allergies:Clean;BankAccount:Clean;BeerSong:Clean;BinarySearch:Clean;Bob:Clean;BookStore:Clean;Bowling:Clean;CircularBuffer:Clean;Clock:Clean;Collatzconjecture:Clean;ETL:Clean;Grains:Clean;Hamming:Clean;HelloWorld:Clean;ISBNVerifier:Clean;Leap:Clean;MineSweeper:Clean;NucleotideCount:Clean;PerfectNumbers:Clean;PhoneNumber:Clean;PigLatin:Clean;Poker:Clean;raindrops:Clean;ReverseString:Clean;RnaTranscription:Clean;RomanNumerals:Clean;SaddlePoints:Clean;Triangle:Clean;twofer:Clean;Wordy:Clean;SecretHandshake:Clean;ArmstrongNumbers:Clean;SpaceAge:Clean;Proverb:Clean;GradeSchool:Clean;WordCount:Clean;Isogram:Clean;DifferenceOfSquares:Clean"/>
+        <CallTarget Targets="Allergies:Clean;BankAccount:Clean;BeerSong:Clean;BinarySearch:Clean;Bob:Clean;BookStore:Clean;Bowling:Clean;CircularBuffer:Clean;Clock:Clean;Collatzconjecture:Clean;ETL:Clean;Grains:Clean;Hamming:Clean;HelloWorld:Clean;ISBNVerifier:Clean;Leap:Clean;MineSweeper:Clean;NucleotideCount:Clean;PerfectNumbers:Clean;PhoneNumber:Clean;PigLatin:Clean;Poker:Clean;raindrops:Clean;ReverseString:Clean;RnaTranscription:Clean;RomanNumerals:Clean;SaddlePoints:Clean;Triangle:Clean;twofer:Clean;Wordy:Clean;SecretHandshake:Clean;ArmstrongNumbers:Clean;SpaceAge:Clean;Proverb:Clean;GradeSchool:Clean;WordCount:Clean;Isogram:Clean;DifferenceOfSquares:Clean;HighScores:Clean;ResistorColor:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Allergies:Make;BankAccount:Make;BeerSong:Make;BinarySearch:Make;Bob:Make;BookStore:Make;Bowling:Make;CircularBuffer:Make;Clock:Make;Collatzconjecture:Make;ETL:Make;Grains:Make;Hamming:Make;HelloWorld:Make;ISBNVerifier:Make;Leap:Make;MineSweeper:Make;NucleotideCount:Make;PerfectNumbers:Make;PhoneNumber:Make;PigLatin:Make;Poker:Make;raindrops:Make;ReverseString:Make;RnaTranscription:Make;RomanNumerals:Make;SaddlePoints:Make;Triangle:Make;twofer:Make;Wordy:Make;SecretHandshake:Make;ArmstrongNumbers:Make;SpaceAge:Make;Proverb:Make;GradeSchool:Make;WordCount:Make;Isogram:Make;DifferenceOfSquares:Make"/>
+        <CallTarget Targets="Allergies:Make;BankAccount:Make;BeerSong:Make;BinarySearch:Make;Bob:Make;BookStore:Make;Bowling:Make;CircularBuffer:Make;Clock:Make;Collatzconjecture:Make;ETL:Make;Grains:Make;Hamming:Make;HelloWorld:Make;ISBNVerifier:Make;Leap:Make;MineSweeper:Make;NucleotideCount:Make;PerfectNumbers:Make;PhoneNumber:Make;PigLatin:Make;Poker:Make;raindrops:Make;ReverseString:Make;RnaTranscription:Make;RomanNumerals:Make;SaddlePoints:Make;Triangle:Make;twofer:Make;Wordy:Make;SecretHandshake:Make;ArmstrongNumbers:Make;SpaceAge:Make;Proverb:Make;GradeSchool:Make;WordCount:Make;Isogram:Make;DifferenceOfSquares:Make;HighScores:Make;ResistorColor:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
