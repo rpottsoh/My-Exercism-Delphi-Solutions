@@ -4,11 +4,6 @@ interface
 
 type
   TBracketPush = class
-  private
-    class var
-      fBrackets: string;
-      fPreviousLength: integer;
-  public
     class function IsPaired(aInput: string): boolean;
   end;
 
@@ -19,20 +14,22 @@ uses SysUtils;
 
 class function TBracketPush.IsPaired(aInput: string): boolean;
 begin
-  fBrackets := '';
+  var fBrackets := '';
+  var fPreviousLength := -1;
+
   for var aChar in aInput do
     if CharInSet(aChar, ['[',']','{','}','(',')']) then
       fBrackets := fBrackets + aChar;
-  fPreviousLength := length(fBrackets);
 
-  while length(fBrackets) > 0 do
-  begin
-    fBrackets := fBrackets.Replace('[]', '').Replace('{}', '').Replace('()', '');
-    if length(fBrackets) = fPreviousLength then
+  repeat
+    if fBrackets.Length = fPreviousLength then
       exit(false);
-    fPreviousLength := length(fBrackets);
-  end;
+    fPreviousLength := fBrackets.Length;
+    fBrackets := fBrackets.Replace('[]', '').Replace('{}', '').Replace('()', '');
+  until fBrackets.Length = 0;
+
   result := true;
 end;
 
 end.
+
