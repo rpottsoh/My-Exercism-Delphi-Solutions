@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="D:\projects.git\My-Exercism-Solutions\delphi\parallel-letter-frequency\ParallelLetterFrequency.exe" total="8" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2019-02-25" time="0.282">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="ParallelLetterFrequency.exe" executed="true" result="Success" success="True" time="0.282" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uParallelLetterFrequencyTest" executed="true" result="Success" success="True" time="0.281" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="ParallelLetterFrequencyTests" executed="True" result="Success" success="True" time="0.281" >
+                <results>
+                  <test-case name="No_texts_mean_no_letters" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="One_letter" executed="True" result="Success" success="True" time="0.032" asserts="0" />
+                  <test-case name="Case_insensitivity" executed="True" result="Success" success="True" time="0.016" asserts="0" />
+                  <test-case name="Many_empty_texts_still_mean_no_letters" executed="True" result="Success" success="True" time="0.177" asserts="0" />
+                  <test-case name="Many_times_the_same_text_gives_a_predictable_result" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Punctuation_doesnt_count" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Numbers_dont_count" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="All_three_anthems_together" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
