@@ -47,14 +47,13 @@ begin
 end; 
  
 class function Triangle.Sides(aIsKind: TriangleKind; aSide1, aSide2, aSide3: double): boolean; 
-var luniqueSides: integer; 
-begin 
-  result := false; 
-  if not (AllSidesAreZero(aSide1, aSide2, aSide3) or 
-          ViolatesTriangleInequality(aSide1, aSide2, aSide3) or 
-          HasImpossibleSides(aSide1, aSide2, aSide3)) then 
-  begin 
-    luniqueSides := UniqueSides(aSide1, aSide2, aSide3); 
+begin
+  result := false;
+  if not (AllSidesAreZero(aSide1, aSide2, aSide3) or
+          ViolatesTriangleInequality(aSide1, aSide2, aSide3) or
+          HasImpossibleSides(aSide1, aSide2, aSide3)) then
+  begin
+    var luniqueSides := UniqueSides(aSide1, aSide2, aSide3);
     result := ((luniqueSides = 1) and (aIsKind in [Equilateral, Isosceles])) or 
               ((luniqueSides = 2) and (aIsKind = Isosceles)) or 
               ((aIsKind = Scalene) and (luniqueSides = 3)); 

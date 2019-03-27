@@ -22,7 +22,7 @@ var lResults: TList<string>;
 begin
   result := '';
   lResults := TList<string>.Create;
-  Board := aInput.Split(['\n'],none);
+  Board := aInput.Split(['\n'],TStringSplitOptions.none);
   if length(Board) > 0 then
   begin
     for i := 0 to length(Board) - 1 do

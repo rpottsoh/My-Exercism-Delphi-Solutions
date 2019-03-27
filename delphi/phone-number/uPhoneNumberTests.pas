@@ -11,7 +11,7 @@ uses
   DUnitX.TestFramework;
 
 const
-  CanonicalVersion = '1.4.0';
+  CanonicalVersion = '1.7.0';
 
 type
 
@@ -23,67 +23,83 @@ type
     procedure Cleans_the_number;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Cleans_numbers_with_dots;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Cleans_numbers_with_multiple_spaces;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_when_9_digits;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_when_11_digits_does_not_start_with_a_1;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Valid_when_11_digits_and_starting_with_1;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Valid_when_11_digits_and_starting_with_1_even_with_punctuation;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_when_more_than_11_digits;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_with_letters;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_with_punctuations;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_if_area_code_starts_with_0;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_if_area_code_starts_with_1;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_if_exchange_code_starts_with_0;
 
     [Test]
-    [Ignore]
+    //[Ignore]
     procedure Invalid_if_exchange_code_starts_with_1;
 
     [Test]
-    [Ignore('This is a bonus test')]
+    //[Ignore]
+    procedure Invalid_if_area_code_starts_with_0_on_valid_11_digit_number;
+
+    [Test]
+    //[Ignore]
+    procedure Invalid_if_area_code_starts_with_1_on_valid_11_digit_number;
+
+    [Test]
+    //[Ignore]
+    procedure Invalid_if_exchange_code_starts_with_0_on_valid_11_digit_number;
+
+    [Test]
+    //[Ignore]
+    procedure Invalid_if_exchange_code_starts_with_1_on_valid_11_digit_number;
+
+    [Test]
+    //[Ignore('This is a bonus test')]
     procedure Extract_area_code;
 
     [Test]
-    [Ignore('This is a bonus test')]
+    //[Ignore('This is a bonus test')]
     procedure Extract_exchange_code;
 
     [Test]
-    [Ignore('This is a bonus test')]
+    //[Ignore('This is a bonus test')]
     procedure Formats_a_number;
   end;
 
@@ -167,10 +183,24 @@ begin
   assert.AreEqual('', phone.Clean);
 end;
 
+procedure PhoneNumberTests.Invalid_if_area_code_starts_with_0_on_valid_11_digit_number;
+var phone: IPhoneNumber;
+begin
+  phone := NewPhoneNumber('1 (023) 456-7890');
+  assert.AreEqual('', phone.Clean);
+end;
+
 procedure PhoneNumberTests.Invalid_if_area_code_starts_with_1;
 var phone: IPhoneNumber;
 begin
   phone := NewPhoneNumber('(123) 456-7890');
+  assert.AreEqual('', phone.Clean);
+end;
+
+procedure PhoneNumberTests.Invalid_if_area_code_starts_with_1_on_valid_11_digit_number;
+var phone: IPhoneNumber;
+begin
+  phone := NewPhoneNumber('1 (123) 456-7890');
   assert.AreEqual('', phone.Clean);
 end;
 
@@ -181,10 +211,24 @@ begin
   assert.AreEqual('', phone.Clean);
 end;
 
+procedure PhoneNumberTests.Invalid_if_exchange_code_starts_with_0_on_valid_11_digit_number;
+var phone: IPhoneNumber;
+begin
+  phone := NewPhoneNumber('1 (223) 056-7890');
+  assert.AreEqual('', phone.Clean);
+end;
+
 procedure PhoneNumberTests.Invalid_if_exchange_code_starts_with_1;
 var phone: IPhoneNumber;
 begin
   phone := NewPhoneNumber('(223) 156-7890');
+  assert.AreEqual('', phone.Clean);
+end;
+
+procedure PhoneNumberTests.Invalid_if_exchange_code_starts_with_1_on_valid_11_digit_number;
+var phone: IPhoneNumber;
+begin
+  phone := NewPhoneNumber('1 (223) 156-7890');
   assert.AreEqual('', phone.Clean);
 end;
 
@@ -206,7 +250,7 @@ procedure PhoneNumberTests.Formats_a_number;
 var phone: IPhoneNumber;
 begin
   phone := NewPhoneNumber('2234567890');
-  assert.AreEqual('(223) 456-7890', phone.Formatted);
+  assert.AreEqual('(223) 456-7890', phone.ToString);
 end;
 
 initialization
