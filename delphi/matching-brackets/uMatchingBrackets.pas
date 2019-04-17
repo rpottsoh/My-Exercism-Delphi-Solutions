@@ -1,9 +1,9 @@
-unit uBracketPush;
+unit uMatchingBrackets;
 
 interface
 
 type
-  TBracketPush = class
+  TMatchingBrackets = class
     class function IsPaired(aInput: string): boolean;
   end;
 
@@ -12,7 +12,7 @@ uses SysUtils;
 
 { BracketPush }
 
-class function TBracketPush.IsPaired(aInput: string): boolean;
+class function TMatchingBrackets.IsPaired(aInput: string): boolean;
 begin
   var fBrackets := '';
   var fPreviousLength := -1;
